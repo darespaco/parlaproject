@@ -975,7 +975,7 @@ final class WP_Screen {
 
 		// Output optional wrapper.
 		if ( $options['wrap'] ) {
-			$wrapper_start = '<div id="screen-options-wrap" class="hidden" tabindex="-1" aria-label="' . esc_attr__( 'Screen Options Tab' ) . '">';
+			$wrapper_start = '<div id="screen-options-wrap" class="" tabindex="-1" aria-label="' . esc_attr__( 'Screen Options Tab' ) . '">';
 			$wrapper_end = '</div>';
 		}
 
