@@ -112,7 +112,7 @@ input,
 select,
 textarea {
 	color: #666666;
-	font: 16px 'PT Sans', serif;
+	font: 16px 'Open Sans', serif;
 	line-height: 20px;
 	word-wrap: break-word;
 }
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 	padding-bottom: 10px;
 	color: #222222;
 	font-weight: normal;
-	font-family: 'PT Sans', serif;
+	font-family: 'Open Sans', serif;
    line-height: 1.4;
 }
 h1 { font-size: 30px;}
@@ -146,7 +146,7 @@ hr {
 p {
 	line-height: 1.4;
 	padding-bottom: 15px;
-	font-family: 'PT Sans', serif;
+	font-family: 'Open Sans', serif;
 	font-size: 16px;
 }
 strong {
@@ -660,7 +660,7 @@ body {
 	float: left;
 	position: relative;
 	padding: 0 15px;
-	font-family: 'PT Sans', serif;
+	font-family: 'Open Sans', serif;
 }
 .main-navigation li > a {
    line-height: 75px;
@@ -800,7 +800,7 @@ li.default-menu {
 .small-menu li {
    float: left;
    position: relative;
-   font-family: 'PT Sans', sans-serif;
+   font-family: 'Open Sans', sans-serif;
 }
 .small-menu li.default-menu,
 li.default-menu {
@@ -1630,7 +1630,7 @@ a#scroll-up:hover {
 .read-more, .more-link {
 	font-size: 14px;
 	color: #4cb0c6;
-	font-family: 'PT Sans', serif;
+	font-family: 'Open Sans', serif;
 }
 
 /* =PRIMARY AND SECONDARY CONTENT AREA
@@ -1749,7 +1749,7 @@ a#scroll-up:hover {
 	border: 1px solid #EAEAEA;
 	font-size: 14px;
 	color: #666666;
-	font-family: 'PT Sans', serif;
+	font-family: 'Open Sans', serif;
 	margin: 0 0 20px;
 }
 .post .entry-meta .by-author,
@@ -2196,6 +2196,16 @@ a#scroll-up:hover {
 	margin: 20px 20px 20px 20px;
 }
 
+.page-title-slider {
+	font-size: 48px;
+	text-align: center;
+	font-family: "open sans", serif;
+	color: #066d8b;
+	text-transform: uppercase;
+	font-weight: 200;
+	padding-top: 100px;
+}
+
 .centered {
 	text-align: center;
 }
@@ -2290,8 +2300,9 @@ a#scroll-up:hover {
 
 .line {
 	display: inline-block;
-	width: 80%;
-	height: 2px;
+	width: 90%;
+	height: 1px;
+	opacity: 0.8;
 	background-color: #066D8B;
 }
 
@@ -2398,10 +2409,9 @@ a#scroll-up:hover {
 }
 
 .anchor {
-	position: absolute;
+	position: relative;
 	display: inline-block;
-	left:50%;
-	width: 45%;
+	width: 100%;
 	bottom: 0;
 	height: 70px;
 }
@@ -2449,6 +2459,29 @@ a#scroll-up:hover {
 	text-transform: capitalize;
 	font-stretch: ultra-expanded;
 	line-height: 0.7;
+}
+
+.home-second {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.home-calendar {
+	padding: 35px;
+	margin-bottom: 75px;
+}
+
+.ai1ec-calendar-toolbar {
+	display: none;
+}
+
+.ai1ec-pull-left {
+	display: none;
+}
+
+.home-evangeli {
+	padding: 35px;
+	margin-bottom: 35px;
 }
 
 .home-middle {
@@ -2643,6 +2676,93 @@ a#scroll-up:hover {
 
 .text-bg {
 	background-image: url("./img/slide-textos.png");
+}
+
+.text-box {
+	position: relative;
+	display: inline-block;
+	padding: 20px;
+	margin-bottom: 20px;
+	padding-top: 25px;
+	background: #E6EAEB;
+	color: #066D8B;
+	border-radius: 7px;
+	text-align: center;
+}
+
+.text-title {
+	color: #066D8B;
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 0 !important;
+}
+
+.text-content {
+	color: rgba(0,0,0,0.7);
+	font-size: 16px;
+	text-align: left;
+	font-style: italic;
+}
+
+.text-btn {
+	margin-top: 15px;
+	margin-bottom: 7px;
+	position: relative;
+	display: inline-block;
+	color: #066D8B;
+	padding: 7px;
+	border-color: #066D8B;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	background-color: rgba(0,0,0,0);
+}
+
+.text-btn:hover {
+	background-color: rgba(6,109,139,0.2);
+	transition: all 0.5s;
+	 -webkit-transition: all 0.5s;
+}
+
+.text-head {
+	color: #066D8B;
+	font-size: 24px;
+}
+
+.post-date {
+	font-size: 14px;
+	font-weight: 600;
+	color: rgba(0,0,0,0.4);
+}
+
+.document-title {
+	color: #066D8B;
+	text-align: center;
+	font-size: 20px;
+}
+
+.document-content {
+	color: rgba(0,0,0,0.7);
+	font-size: 16px;
+	text-align: left;
+}
+
+.see-more-documents {
+	font-size: 14px;
+	font-style: italic;
+	text-align: right;
+}
+
+.articles {
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.documents {
+	position: relative;
+	display: inline-block;
+	text-align: center;
 }
 
 /* POST TEMPLATE */

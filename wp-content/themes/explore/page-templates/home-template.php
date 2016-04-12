@@ -15,11 +15,11 @@
 
       <div class="home-slider">
        	<?php echo do_shortcode('[smartslider3 slider=2]'); ?>
-         <span id="anchor-first" class="anchor"></span>
          <a class="go-anchor-button" href="#anchor-first">
             <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
          </a>
       </div>
+      <span id="anchor-first" class="anchor"></span>
 
       <div class="home-content">
 
@@ -27,9 +27,9 @@
 
          		<div class="col-sm-8 col-md-8" role="complementary">
 
-         			<?php if ( is_active_sidebar( 'home-main-left' ) ) : ?>
-         				<?php dynamic_sidebar( 'home-main-left' ); ?>
-         		<?php endif; ?>
+                  <?php if ( is_active_sidebar( 'home-main-left' ) ) : ?>
+                     <?php dynamic_sidebar( 'home-main-left' ); ?>
+                  <?php endif; ?>
 
          		</div>
 
@@ -41,12 +41,47 @@
 
          		</div>
 
-         <div class="anchor">
-            <a class="go-anchor-button" href="#anchor-second">
-               <img id="anchor-second" class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
-            </a>
          </div>
-         </div>
+
+         <div class="home-second">
+
+            <div class="col-md-8 home-calendar">
+
+               <h4 class="home-title">
+                  Calendario
+                  <br>
+                  <div class="line"></div>
+               </h4>
+               <?php echo do_shortcode('[ai1ec view="monthly"]'); ?>
+            </div>
+
+            <div class="col-md-4 home-evangeli border-left">
+
+                  <?php
+                     $config_final=file_get_contents('http://evangeli.net/evangelio');
+                     $first_step = explode( '<p class="dia_white dia_liturgic" >' , $config_final );
+                     $second_step = explode('</p>' , $first_step[1] );
+                     $ev_title = "Evangelio del día";
+                     $ev_subtitle = $second_step[0];
+                     $evangeli = $second_step[1];
+                  ?>
+
+                  <h4 class="home-title">
+                     <?php echo $ev_title; ?>
+                     <br>
+                     <div class="line"></div>
+                  </h4>
+                  
+                  <p class="home-title">
+                     <?php echo $ev_subtitle; ?>
+                  </p>
+
+                  <?php echo $evangeli; ?>
+
+            </div>
+         </div>        
+
+
 
          <div class="selector blue-bg">
                <h6>¿Qué puedes encontrar en la web?</h6>

@@ -143,6 +143,11 @@
 <?php get_header(); ?>
       
       <div class="main-img <?php echo $slider_img ?>">
+         <div class="page-title-slider">
+            <?php the_title() ?>
+            <br>
+            <div class="small-line"></div>
+         </div>
          <span id="anchor-first" class="anchor"></span>
          <a class="go-anchor-button" href="#anchor-first">
             <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
@@ -153,11 +158,7 @@
 
       <div id="primary">
          <div class="inner-wrap">
-            <div class="page-title">
-               <?php the_title() ?>
-               <br>
-               <div class="small-line"></div>
-            </div>
+            
 
 
             <div id="content" class="clearfix">

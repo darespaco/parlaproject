@@ -275,6 +275,15 @@ function customized_widgets_init() {
     'after_title'   => '</h3>',
   ));
 
+  register_sidebar(array(
+    'id'            => 'textos',
+    'name'          =>  __( 'Textos', 'explore' ),
+    'description'   =>  __( 'Used for footer widget area', 'explore' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
 
 
 }

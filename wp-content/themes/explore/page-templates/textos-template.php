@@ -14,52 +14,52 @@
 <?php get_header(); ?>
    
    <div class="main-img text-bg">
+      <div class="page-title-slider"><?php the_title() ?> de interés</div>
+      <br>
+      <div class="small-line"></div>
       <span id="anchor-first" class="anchor"></span>
       <a class="go-anchor-button" href="#anchor-first">
          <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
       </a>
    </div>
 
-   <div class="inner-wrap">
+   <?php do_action( 'explore_before_body_content' ); ?>
 
+   <div id="primary">
 
-      <?php do_action( 'explore_before_body_content' ); ?>
+      <div class="col-md-8 articles">
+         <h5 class="text-head">Artículos</h5>
+         <hr>
+         <?php if ( is_active_sidebar( 'textos' ) ) : ?>
+            <?php dynamic_sidebar( 'textos' ); ?>
+         <?php endif; ?>
+      </div>
 
-      <div id="primary">
-         <div class="page-title">
-            <?php the_title() ?> de interés
+      <div class="col-md-4 documents">
+         <h5 class="text-head">Documentos</h5>
+         <hr>
+         <div class="document-box">
+            <h4 class="document-title">El Catecismo de la Iglesia Católica</h4>
+            <div class="document-content clearfix">
+               <p>El Catecismo de la Iglesia Católica presenta una exposición orgánica y sistemática de los contenidos fundamentales de la fe y de la moral católicas, a la luz de la Tradición viva de la Iglesia y del Concilio Vaticano II; y contribuye notablemente a un conocimiento más profundo y sistemático de la fe.</p>
+            </div>
+            <a href="http://www.vatican.va/archive/catechism_sp/index_sp.html" target="_blank"><div class="see-more-documents">Ver el Catecismo</div></a>
             <br>
-            <div class="small-line"></div>
-         </div>
-   		<div id="content" class="clearfix">
-
-   			<?php while ( have_posts() ) : the_post(); ?>
-
-   				<?php get_template_part( 'content', 'page' ); ?>
-
-   			<?php endwhile; ?>
             <hr>
-
-   		</div><!-- #content -->
-
-
-         <div class="col-sm-6 col-md-7" role="complementary">
-            <!-- <h4 class="act-type-title">Actividades puntuales</h4> -->
-            <?php if ( is_active_sidebar( $puntual ) ) : ?>
-               <?php dynamic_sidebar( $puntual ); ?>
-            <?php endif; ?>
          </div>
 
-         <div class="col-sm-6 col-md-5" role="complementary">
-            <!-- <h4 class="act-type-title">Vida durante el año</h4> -->
-            <?php if ( is_active_sidebar( $general ) ) : ?>
-               <?php dynamic_sidebar( $general ); ?>
-            <?php endif; ?>
+         <div class="document-box">
+            <h4 class="document-title">Otro documento fijo</h4>
+            <div class="document-content clearfix">
+               <p>El Catecismo de la Iglesia Católica presenta una exposición orgánica y sistemática de los contenidos fundamentales de la fe y de la moral católicas, a la luz de la Tradición viva de la Iglesia y del Concilio Vaticano II; y contribuye notablemente a un conocimiento más profundo y sistemático de la fe.</p>           
+            </div>
+            <a href="" target="_blank"><div class="see-more-documents">Ver documento completo</div></a>
+            <br>
+            <hr>
          </div>
+      </div>
+	</div><!-- #primary -->
 
-   	</div><!-- #primary -->
-
-   	<?php do_action( 'explore_after_body_content' ); ?>
-   </div>
+	<?php do_action( 'explore_after_body_content' ); ?>
 
 <?php get_footer(); ?>
