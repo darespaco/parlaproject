@@ -1,27 +1,38 @@
+.subscribe-box {
+	text-align: center;
+}
 .es_caption 
 {
 	padding-bottom:5px;
 	padding-top:5px;
 	padding-right:5px;
+	text-align: left;
 }
 .es_msg 
 {
 	padding-top:5px;
 	padding-bottom:5px;
-	color:#F00;
+	color:#D70F0F;
+}
+.success_msg {
+	color:#3BB44F !important;
 }
 .es_textbox 
 {
 	padding-bottom:10px;
+
 }
 .es_button 
 {
+	display: inline-block;
 	padding-top:10px;
 	padding-bottom:5px;
+	text-align: center;
 }
 .es_textbox_class 
 {
 	width:200px;
+	margin-bottom: 10px !important;
 }
 .es_textbox_button 
 {

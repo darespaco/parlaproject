@@ -37,7 +37,18 @@ if( $flexible_posts->have_posts() ):
 
 				<div class="col-md-6">
 					<div class="text-box">
-						<h4 class="text-title"><?php the_title(); ?></h4>
+
+						<?php 
+							if (the_post_thumbnail()) { ?>
+								<div class="text-img">
+									<?php the_post_thumbnail(); ?>
+								</div>
+						<?php							
+							}
+						?>
+						<a href="<?php echo the_permalink(); ?>">
+							<h4 class="text-title"><?php the_title(); ?></h4>
+						</a>
 						<p class="post-date">- <?php echo get_the_date( 'd-m-Y' ); ?> -</p>
 						<div class="text-content clearfix">
 

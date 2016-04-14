@@ -183,7 +183,7 @@ if ( ! function_exists( 'explore_sidebar_layout' ) ) :
 function explore_sidebar_layout() {
    global $post;
 
-   $layout = get_theme_mod( 'explore_default_layout', 'both_sidebar' );
+   $layout = get_theme_mod( 'explore_default_layout', 'right_sidebar' );
 
    // Get Layout meta for posts
    if( $post ) { $layout_meta = get_post_meta( $post->ID, 'explore_page_layout', true ); }
@@ -199,14 +199,14 @@ function explore_sidebar_layout() {
    }
 
    elseif( is_page() ) {
-      $layout = get_theme_mod( 'explore_pages_default_layout', 'both_sidebar' );
+      $layout = get_theme_mod( 'explore_pages_default_layout', 'right_sidebar' );
       if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
          $layout = $layout_meta;
       }
    }
 
    elseif( is_single() ) {
-      $layout = get_theme_mod( 'explore_single_posts_default_layout', 'both_sidebar' );
+      $layout = get_theme_mod( 'explore_single_posts_default_layout', 'right_sidebar' );
       if( $layout_meta != 'default_layout' && $layout_meta != '' ) {
          $layout = $layout_meta;
       }
@@ -235,10 +235,10 @@ function explore_body_class( $classes ) {
 	}
 
 	if( empty( $layout_meta ) || is_archive() || is_search() ) { $layout_meta = 'default_layout'; }
-	$explore_default_layout = get_theme_mod( 'explore_default_layout', 'both_sidebar' );
+	$explore_default_layout = get_theme_mod( 'explore_default_layout', 'right_sidebar' );
 
-	$explore_default_page_layout = get_theme_mod( 'explore_pages_default_layout', 'both_sidebar' );
-	$explore_default_post_layout = get_theme_mod( 'explore_single_posts_default_layout', 'both_sidebar' );
+	$explore_default_page_layout = get_theme_mod( 'explore_pages_default_layout', 'right_sidebar' );
+	$explore_default_post_layout = get_theme_mod( 'explore_single_posts_default_layout', 'right_sidebar' );
 
 	if( $layout_meta == 'default_layout' ) {
 		if( is_page() ) { $classes[] = $explore_default_page_layout; }

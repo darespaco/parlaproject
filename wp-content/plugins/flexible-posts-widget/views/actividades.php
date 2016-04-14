@@ -37,15 +37,15 @@ if( $flexible_posts->have_posts() ):
 
 				<div class="act-box-content">
 					<h4 class="act-title"><?php the_title(); ?></h4>
-					<hr>
+					<hr class="line">
 					<div class="act-content clearfix">
 
 						<?php
-							the_content();
+							echo the_content( '¡Cuéntame más!' , FALSE );
 						?>
 
 					</div>
-					<button type="button" class="btn btn-info act-btn" href="<?php echo the_permalink(); ?>">¡Quiero ir!</button>
+					<!-- <a href="<?php echo the_permalink(); ?>" class="text-btn">¡Quiero ir!</a> -->
 				</div>
 		</li>
 	<?php endwhile; ?>

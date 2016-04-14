@@ -81,6 +81,7 @@ function eemail_submitresult()
 				if((http_req.responseText).trim() == "subscribed-successfully")
 				{
 					document.getElementById("es_msg").innerHTML = es_widget_notices.es_success_message;
+					document.getElementById("es_msg").className += "success_msg";
 					document.getElementById("es_txt_email").value="";
 				}
 				else if((http_req.responseText).trim() == "subscribed-pending-doubleoptin")

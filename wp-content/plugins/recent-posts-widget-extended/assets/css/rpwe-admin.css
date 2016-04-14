@@ -31,6 +31,10 @@
 	display: block;
 }
 
+.rpwe-block h3 {
+	font-size: 12px;
+}
+
 .rpwe-multiple-check-form {
 	margin: 1em 0;
 }

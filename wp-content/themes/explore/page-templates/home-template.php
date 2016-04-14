@@ -15,11 +15,11 @@
 
       <div class="home-slider">
        	<?php echo do_shortcode('[smartslider3 slider=2]'); ?>
-         <a class="go-anchor-button" href="#anchor-first">
+         <a class="go-anchor-button" href="#ns">
             <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
          </a>
+         <span id="ns" class="anchor"></span>
       </div>
-      <span id="anchor-first" class="anchor"></span>
 
       <div class="home-content">
 
@@ -72,7 +72,7 @@
                      <div class="line"></div>
                   </h4>
                   
-                  <p class="home-title">
+                  <p class="home-heading">
                      <?php echo $ev_subtitle; ?>
                   </p>
 
@@ -80,6 +80,47 @@
 
             </div>
          </div>        
+
+         <div class="home-middle">
+            <h4 class="home-title">Redes Sociales</h4>
+            <h6 class="home-subtitle">¡No te pierdas las últimas novedades!</h6>
+            <hr class="line">
+            <br>
+
+            <div class="rrss-box">
+
+               <div class="col-md-4">
+                  <a href="https://twitter.com/pontifex_es" target="_blank">
+                     <img class="rs-icon-over" src=<?php echo get_template_directory_uri() . '/img/icon-tw.png'; ?> />
+                     <img class="rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-pope.jpeg'; ?> />
+                     <p class="home-heading">Papa Francisco</p>
+                  </a>
+                  <?php echo do_shortcode('[dpSocialTimeline id=2]'); ?>
+               </div>
+               
+               <div class="col-md-4">
+                  <a href="https://facebook.com/parroquia.asuncionparla" target="_blank">
+                     <img class="rs-icon-over" src=<?php echo get_template_directory_uri() . '/img/icon-fb.png'; ?> />
+                     <img class="rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-parroquia.jpg'; ?> />
+                     <p class="home-heading">Parroquia Nuestra Señora de la Asunción</p>
+                  </a>
+                  <?php echo do_shortcode('[dpSocialTimeline id=1]'); ?>
+               </div>
+
+               <div class="col-md-4">
+                  <a href="https://twitter.com/diocesisgetafe" target="_blank">
+                     <img class="rs-icon-over" src=<?php echo get_template_directory_uri() . '/img/icon-tw.png'; ?> />
+                     <img class="rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-getafe.jpg'; ?> />
+                     <p class="home-heading">Diócesis de Getafe</p>
+                  </a>
+                  <?php echo do_shortcode('[dpSocialTimeline id=3]'); ?>
+               </div>
+
+            </div>
+            <hr>
+            <div class="btn btn-default moreRS">Mostrar más</div>
+
+         </div>
 
 
 

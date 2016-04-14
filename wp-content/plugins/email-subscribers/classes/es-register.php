@@ -259,12 +259,12 @@ class es_cls_registerhook
 			'es_incorrect_email'	=> _x( 'Please provide a valid email address.', 'widget-enhanced-select', 'email-subscribers' ),
 			'es_load_more'          => _x( 'loading...', 'widget-enhanced-select', 'email-subscribers' ),
 			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-enhanced-select', 'email-subscribers' ),
-			'es_success_message'    => _x( 'Subscribed successfully.', 'widget-enhanced-select', 'email-subscribers' ),
-			'es_success_notice'    	=> _x( 'You have successfully subscribed to the newsletter. You will receive a confirmation email in few minutes. Please follow the link in it to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.', 'widget-enhanced-select', 'email-subscribers' ),
-			'es_email_exists'     	=> _x( 'Email already exist.', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_success_message'    => _x( '¡Enhorabuena, ya estás suscrito!', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_success_notice'    	=> _x( 'A partir de ahora te informaremos cada vez que subamos nuevo contenido a la web para que no te pierdas nada. ¡Que tengas un buen día!', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_email_exists'     	=> _x( 'Ups, parece que ya estás suscrito con este email, ¡prueba con otro!', 'widget-enhanced-select', 'email-subscribers' ),
 			'es_error'     			=> _x( 'Oops.. Unexpected error occurred.', 'widget-enhanced-select', 'email-subscribers' ),
-			'es_invalid_email' 		=> _x( 'Invalid email address.', 'widget-enhanced-select', 'email-subscribers' ),
-			'es_try_later' 			=> _x( 'Please try after some time.', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_invalid_email' 		=> _x( 'Por favor, revisa que has escrito bien el email, parece que ha habido algún error...', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_try_later' 			=> _x( 'Ups..Nos acabas de pillar con complicaciones. Por favor, inténtalo un poco más tarde. ¡Muchas gracias!', 'widget-enhanced-select', 'email-subscribers' ),
 			'es_problem_request'    => _x( 'There was a problem with the request.', 'widget-enhanced-select', 'email-subscribers' )
 		);
 		wp_localize_script( 'es-widget', 'es_widget_notices', $es_select_params );
@@ -276,12 +276,12 @@ class es_cls_registerhook
 			'es_incorrect_email'	=> _x( 'Please provide a valid email address.', 'widget-page-enhanced-select', 'email-subscribers' ),
 			'es_load_more'          => _x( 'loading...', 'widget-page-enhanced-select', 'email-subscribers' ),
 			'es_ajax_error'         => _x( 'Cannot create XMLHTTP instance', 'widget-page-enhanced-select', 'email-subscribers' ),
-			'es_success_message'    => _x( 'Subscribed successfully.', 'widget-page-enhanced-select', 'email-subscribers' ),
-			'es_success_notice'    	=> _x( 'You have successfully subscribed to the newsletter. You will receive a confirmation email in few minutes. Please follow the link in it to confirm your subscription. If the email takes more than 15 minutes to appear in your mailbox, please check your spam folder.', 'widget-page-enhanced-select', 'email-subscribers' ),
-			'es_email_exists'     	=> _x( 'Email already exist.', 'widget-page-enhanced-select', 'email-subscribers' ),
+			'es_success_message'    => _x( '¡Enhorabuena, ya estás suscrito!', 'widget-page-enhanced-select', 'email-subscribers' ),
+			'es_success_notice'    	=> _x( 'A partir de ahora te informaremos cada vez que subamos nuevo contenido a la web para que no te pierdas nada. ¡Que tengas un buen día!', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_email_exists'     	=> _x( 'Ups, parece que ya estás suscrito con este email, ¡prueba con otro!', 'widget-enhanced-select', 'email-subscribers' ),
 			'es_error'     			=> _x( 'Oops.. Unexpected error occurred.', 'widget-page-enhanced-select', 'email-subscribers' ),
-			'es_invalid_email' 		=> _x( 'Invalid email address.', 'widget-page-enhanced-select', 'email-subscribers' ),
-			'es_try_later' 			=> _x( 'Please try after some time.', 'widget-page-enhanced-select', 'email-subscribers' ),
+			'es_invalid_email' 		=> _x( 'Por favor, revisa que has escrito bien el email, parece que ha habido algún error...', 'widget-enhanced-select', 'email-subscribers' ),
+			'es_try_later' 			=> _x( 'Ups..Nos acabas de pillar con complicaciones. Por favor, inténtalo un poco más tarde. ¡Muchas gracias!', 'widget-page-enhanced-select', 'email-subscribers' ),
 			'es_problem_request'    => _x( 'There was a problem with the request.', 'widget-page-enhanced-select', 'email-subscribers' )
 		);
 		wp_localize_script( 'es-widget-page', 'es_widget_page_notices', $es_select_params );
@@ -406,7 +406,7 @@ class es_widget_register extends WP_Widget
 		}
 		?>
 
-		<div>
+		<div class="subscribe-box">
 			<?php if( $es_desc <> "" ) { ?>
 			<div class="es_caption"><?php echo $es_desc; ?></div>
 			<?php } ?>
@@ -417,12 +417,11 @@ class es_widget_register extends WP_Widget
 				<input class="es_textbox_class" name="es_txt_name" id="es_txt_name" value="" maxlength="225" type="text">
 			</div>
 			<?php } ?>
-			<div class="es_lablebox"><?php _e('Email *', 'email-subscribers'); ?></div>
 			<div class="es_textbox">
-				<input class="es_textbox_class" name="es_txt_email" id="es_txt_email" onkeypress="if(event.keyCode==13) es_submit_page('<?php echo $url; ?>')" value="" maxlength="225" type="text">
+				<input class="es_textbox_class" name="es_txt_email" id="es_txt_email" onkeypress="if(event.keyCode==13) es_submit_page('<?php echo $url; ?>')" placeholder="Introduce tu email" value="" maxlength="225" type="text">
 			</div>
 			<div class="es_button">
-				<input class="es_textbox_button" name="es_txt_button" id="es_txt_button" onClick="return es_submit_page('<?php echo $url; ?>')" value="<?php _e('Subscribe', 'email-subscribers'); ?>" type="button">
+				<input class="es_textbox_button" name="es_txt_button" id="es_txt_button" onClick="return es_submit_page('<?php echo $url; ?>')" value="<?php _e('Subscríbeme', 'email-subscribers'); ?>" type="button">
 			</div>
 			<?php if( $es_name != "YES" ) { ?>
 				<input name="es_txt_name" id="es_txt_name" value="" type="hidden">

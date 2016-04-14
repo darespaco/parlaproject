@@ -40,9 +40,16 @@
 
       		</div><!-- #content -->
          </div>
+      </div>
 
-         <div id="act-selector" class="selector">
-            <h6 class="hint"> Selecciona uno de los tres grupos... </h6>
+         <div id="act-selector" class="selector blue-bg">
+            <div class="auxiliar-down">
+               <h6 class="hint">¡Entra y entérate de las actividades que realizamos en la parroquia!</h6>
+               <a class="go-anchor-button" href="#ns">
+                  <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
+               </a>
+               <span id="ns" class="anchor"></span>
+            </div>
             <div class="sel-element">
                <h5>Niños</h5>
                <div class="sel-box">
@@ -80,21 +87,26 @@
             </div>
          </div>
 
-         <?php
-         $layout = explore_sidebar_layout();
-         if ( $layout == "both_sidebar" ) {
-            get_sidebar( 'left' );
-         }
-         ?>
+         <div class="col-md-10 col-md-offset-1 home-calendar">
+
+            <h4 class="home-title">
+               Calendario
+               <br>
+               <div class="line"></div>
+            </h4>
+            <?php echo do_shortcode('[ai1ec view="monthly"]'); ?>
+         </div>
+
    	</div><!-- #primary -->
 
-   	<?php
-      if ( $layout != "no_sidebar_full_width" &&  $layout != "no_sidebar_content_centered" ) {
-         get_sidebar();
-      }
-      ?>
+      <div class="home-bottom">
+
+         <div class="home-bottom-content">
+           <?php es_subbox( $namefield = "NO", $desc = "", $group = "" ); ?>
+         </div>
+
+      </div>
 
    	<?php do_action( 'explore_after_body_content' ); ?>
-   </div>
 
 <?php get_footer(); ?>

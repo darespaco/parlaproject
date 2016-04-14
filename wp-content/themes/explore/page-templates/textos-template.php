@@ -14,30 +14,32 @@
 <?php get_header(); ?>
    
    <div class="main-img text-bg">
-      <div class="page-title-slider"><?php the_title() ?> de interés</div>
-      <br>
-      <div class="small-line"></div>
-      <span id="anchor-first" class="anchor"></span>
-      <a class="go-anchor-button" href="#anchor-first">
-         <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
-      </a>
-   </div>
+         <div class="page-title-slider">
+            <?php the_title() ?> de interés
+            <br>
+            <div class="small-line"></div>
+         </div>
+         <span id="anchor-first" class="anchor"></span>
+         <a class="go-anchor-button" href="#anchor-first">
+            <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
+         </a>
+      </div>
 
    <?php do_action( 'explore_before_body_content' ); ?>
 
    <div id="primary">
 
       <div class="col-md-8 articles">
-         <h5 class="text-head">Artículos</h5>
-         <hr>
+         <h5 class="home-title">Artículos</h5>
+         <hr class="line">
          <?php if ( is_active_sidebar( 'textos' ) ) : ?>
             <?php dynamic_sidebar( 'textos' ); ?>
          <?php endif; ?>
       </div>
 
       <div class="col-md-4 documents">
-         <h5 class="text-head">Documentos</h5>
-         <hr>
+         <h5 class="home-title">Documentos</h5>
+         <hr class="line">
          <div class="document-box">
             <h4 class="document-title">El Catecismo de la Iglesia Católica</h4>
             <div class="document-content clearfix">
@@ -45,7 +47,7 @@
             </div>
             <a href="http://www.vatican.va/archive/catechism_sp/index_sp.html" target="_blank"><div class="see-more-documents">Ver el Catecismo</div></a>
             <br>
-            <hr>
+            <hr class="line">
          </div>
 
          <div class="document-box">
@@ -55,7 +57,7 @@
             </div>
             <a href="" target="_blank"><div class="see-more-documents">Ver documento completo</div></a>
             <br>
-            <hr>
+            <hr class="line">
          </div>
       </div>
 	</div><!-- #primary -->
