@@ -413,7 +413,7 @@ function explore_footer_copyright() {
 
 	$tg_link =  '<a href="'.esc_url( 'http://themegrill.com/themes/explore' ).'" target="_blank" title="'.esc_attr__( 'ThemeGrill', 'explore' ).'" rel="designer"><span>'.__( 'ThemeGrill', 'explore') .'</span></a>';
 
-	$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s. All rights reserved.', 'explore' ), date( 'Y' ), $site_link ).'<br>'.sprintf( __( 'Powered by %s.', 'explore' ), $wp_link ).' '.sprintf( __( 'Theme: %1$s by %2$s.', 'explore' ), 'Explore', $tg_link );
+	$default_footer_value = sprintf( __( 'Copyright &copy; %1$s %2$s. All rights reserved.', 'explore' ), date( 'Y' ), $site_link ).'<br>';
 
 	$explore_footer_copyright = '<div class="copyright">'.$default_footer_value.'</div>';
 	echo $explore_footer_copyright;
@@ -607,8 +607,9 @@ if ( !function_exists('explore_entry_meta') ) :
                <span class="category"><?php the_category(', '); ?></span>
             <?php } ?>
                <?php if ( comments_open() ) { ?>
-               <span class="comments"><?php comments_popup_link( __( 'No Comments', 'explore' ), __( '1 Comment', 'explore' ), __( '% Comments', 'explore' ), '', __( 'Comments Off', 'explore' ) ); ?></span>
-            <?php } ?>
+             <!--
+               <span class="comments"><?php /*comments_popup_link( __( 'No Comments', 'explore' ), __( '1 Comment', 'explore' ), __( '% Comments', 'explore' ), '', __( 'Comments Off', 'explore' ) );*/ ?></span>
+            <?php } ?> -->
             <?php edit_post_link( __( 'Edit', 'explore' ), '<span class="edit-link">', '</span>' ); ?>
          </div>
       </footer>

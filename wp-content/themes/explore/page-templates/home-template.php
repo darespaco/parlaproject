@@ -179,47 +179,6 @@
                </div>
          </div>
 
-         <div class="home-middle">
-            <h4 class="home-title">Redes Sociales</h4>
-            <h6 class="home-title">¡No te pierdas las últimas novedades!</h6>
-            <hr class="line">
-            <br>
-
-            <div class="rrss-box">
-
-               <div class="col-md-4">
-                  <a href="https://twitter.com/pontifex_es" target="_blank">
-                     <img class="rs-icon-over" src=<?php echo get_template_directory_uri() . '/img/icon-tw.png'; ?> />
-                     <img class="rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-pope.jpeg'; ?> />
-                     <h6 class="home-title">Papa Francisco</h6>
-                  </a>
-                  <?php echo do_shortcode('[dpSocialTimeline id=2]'); ?>
-               </div>
-               
-               <div class="col-md-4">
-                  <a href="https://facebook.com/parroquia.asuncionparla" target="_blank">
-                     <img class="rs-icon-over" src=<?php echo get_template_directory_uri() . '/img/icon-fb.png'; ?> />
-                     <img class="rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-parroquia.jpg'; ?> />
-                     <h6 class="home-title">Parroquia Nuestra Señora de la Asunción</h6>
-                  </a>
-                  <?php echo do_shortcode('[dpSocialTimeline id=1]'); ?>
-               </div>
-
-               <div class="col-md-4">
-                  <a href="https://twitter.com/diocesisgetafe" target="_blank">
-                     <img class="rs-icon-over" src=<?php echo get_template_directory_uri() . '/img/icon-tw.png'; ?> />
-                     <img class="rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-getafe.jpg'; ?> />
-                     <h6 class="home-title">Diócesis de Getafe</h6>
-                  </a>
-                  <?php echo do_shortcode('[dpSocialTimeline id=3]'); ?>
-               </div>
-
-            </div>
-            <hr>
-            <div class="btn btn-default moreRS">Mostrar más</div>
-
-         </div>
-
          <div class="home-bottom">
 
             <div class="home-bottom-content">

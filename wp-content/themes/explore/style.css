@@ -1094,9 +1094,8 @@ a.slide-next:hover {
 }
 .tg-one-third {
 	float: left;
-	width: 31.5789%;
-	margin: 0 2.6315% 0 0;
-	padding: 0px 0px 30px;
+	width: 33.33333%;
+	text-align: center !important;
 }
 .tg-one-fourth {
 	float: left;
@@ -1109,8 +1108,8 @@ a.slide-next:hover {
 }
 .tg-one-half {
 	float: left;
+	text-align: center !important;
 	width: 48.7684729%;
-	margin: 0 2.46305419% 0 0;
 	padding: 0px 0px 30px;
 }
 .tg-one-half-last, .tg-one-third-last {
@@ -1539,15 +1538,14 @@ a.slide-next:hover {
 	background-color: #066D8B;
 }
 .footer-widgets-area {
-	padding-top: 80px;
-	padding-bottom: 20px;
-	color: #b1b6b6;
+	padding-top: 30px;
+	color: rgba(255,255,255,0.8);
 }
 .footer-widgets-area .tg-one-fourth .widget-title {
 	text-align: left;
 }
 .footer-widgets-area h3.widget-title {
-	color: #D5D5D5;
+	color: rgba(255,255,255,0.8);
 }
 .footer-widgets-area .tg-one-fourth p {
 	text-align: left;
@@ -1563,11 +1561,14 @@ a.slide-next:hover {
 	padding-bottom: 25px;
 }
 #colophon .widget-title {
-	font-size: 22px;
+	text-transform: uppercase;
+	letter-spacing: .065em;
+	margin-bottom: 15px;
+	font-size: 20px;
 	line-height: 1.4;
 }
 #colophon, #colophon p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.4;
 }
 
@@ -1581,14 +1582,13 @@ a.slide-next:hover {
 	width: 100%;
 }
 .footer-socket-wrapper .copyright {
-	color: #b1b6b6;
-   float: left;
-   font-size: 14px;
-   max-width: 50%;
+	text-align: center;
+	color: rgba(255,255,255,0.8);
+   font-size: 16px;
 }
 .footer-socket-wrapper .copyright a {
-	color: #b1b6b6;
-   border-bottom: 1px solid #5a5d62;
+	color: #fff;
+   border-bottom: 1px solid #2AC9B4;
 }
 .footer-socket-wrapper .copyright a:hover {
 	color: #ffffff;
@@ -2210,12 +2210,12 @@ a#scroll-up:hover {
 }
 
 .page-title-slider {
-	font-size: 42px;
+	font-size: 47px;
 	text-align: center;
 	font-family: 'BrandonText-Light', sans-serif;
 	color: #066D8B;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: 500;
 	padding-top: 100px;
 }
 
@@ -2272,7 +2272,7 @@ a#scroll-up:hover {
 }
 
 .sel-icon-img {
-	background-color: rgba(255,255,255,0.6);
+	background-color: rgba(6,109,139,0.4);
 	position: relative;
 	border-radius: 50%;
 	opacity: 0;
@@ -2373,6 +2373,12 @@ a#scroll-up:hover {
 	color: white;
 	transition: all 0.5s;
 	 -webkit-transition: all 0.5s;
+}
+
+#sacramentos-selector,
+#act-selector {
+	width: 100%;
+	padding-top: 20px;
 }
 
 /* SOCIAL */
@@ -2554,17 +2560,18 @@ a#scroll-up:hover {
 	position: absolute;
 	display: inline-block;
 	border-radius: 50%;
-	width: 150px;
-	height: 150px;
+	width: 152px;
+	height: 152px;
+	transform: translate(-1px,-1px);
 	opacity: 0;
-	transition: opacity 0.5s;
-	 -webkit-transition: opacity 0.5s;
+	transition: opacity 0.3s;
+	 -webkit-transition: opacity 0.3s;
 }
 
 .rs-icon-over:hover {
-	opacity: 0.7;
-	transition: opacity 0.5s;
-	 -webkit-transition: opacity 0.5s;
+	opacity: 1;
+	transition: opacity 0.3s;
+	 -webkit-transition: opacity 0.3s;
 }
 
 .home-bottom {
@@ -2599,11 +2606,6 @@ a#scroll-up:hover {
 	width: 25% !important;
 	padding: 25px 55px 25px 55px;
 	margin: 0;
-}
-
-#act-selector {
-	width: 100%;
-	padding-top: 20px;
 }
 
 .act-title {
@@ -2698,9 +2700,19 @@ a#scroll-up:hover {
 	background-image: url("./img/slide-ordenacion.png");
 }
 
+.sacramentos-sb {
+	text-align: center;
+	padding: 0 !important;
+}
+
 .side-box {
+	text-align: left;
 	padding-top: 40px;
 	margin-bottom: 20px;
+}
+
+.contacto-btn {
+	margin: 30px !important;
 }
 
 .question {
@@ -2817,4 +2829,14 @@ a#scroll-up:hover {
 
 .featured-image {
 	text-align: center;
+}
+
+.footer-map {
+	width: 100%;
+	background-color: #154857;
+}
+
+.footer-social-icon {
+	width: 65px;
+	padding: 10px;
 }

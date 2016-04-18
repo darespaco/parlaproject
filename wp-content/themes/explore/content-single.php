@@ -8,6 +8,8 @@
  */
 ?>
 
+<?php echo do_shortcode('[ssbp]'); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php do_action( 'explore_before_post_content' ); ?>
 

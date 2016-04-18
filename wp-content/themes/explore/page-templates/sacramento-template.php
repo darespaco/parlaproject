@@ -116,7 +116,7 @@
             "Por supuesto que sí, no existen condiciones previas para ello más que el deseo de pertenecer al pueblo de la Iglesia, pertenencia que padres y padrinos de una forma especial deberán acompañar a lo largo de su vida."
          );
          break;
-      case 'Eucaristía':
+      case 'Primera Comunión':
          $slider_img = "euca-bg";
          $quote = "“Tomó luego pan, y, dadas las gracias, lo partió y se lo dio diciendo: Este es mi cuerpo que es entregado por vosotros; haced esto en recuerdo mío.”";
          $sign = "- Lucas 22, 19 -";
@@ -141,6 +141,8 @@
 ?>
 
 <?php get_header(); ?>
+      
+      <?php echo do_shortcode('[ssbp]'); ?>
       
       <div class="main-img <?php echo $slider_img ?>">
          <div class="page-title-slider">
@@ -186,20 +188,26 @@
 
                </div>
 
-               <div class="col-sm-4 col-md-4 border-left side-box">
-                  <h5 class="home-title">Preguntas habituales</h5>
+               <div class="col-sm-4 col-md-4 sacramentos-sb">
 
-                  <?php
-                     foreach ($questions as $i=>$question) {
-                        echo "<h6 class='question'>" . $question . "</h6>";
-                        echo "<p class='answer'>" . $answers[$i] . "</p>";
-                     }
+                  <a href="#sac-contact" class="text-btn contacto-btn go-anchor-button">Contáctanos</a>
 
-                  ?>
+                  <div class="col-md-12 border-left side-box">
+                     <h5 class="home-title">Preguntas habituales</h5>
+
+                     <?php
+                        foreach ($questions as $i=>$question) {
+                           echo "<h6 class='question'>" . $question . "</h6>";
+                           echo "<p class='answer'>" . $answers[$i] . "</p>";
+                        }
+
+                     ?>
+
+                  </div>
 
                </div>
 
-               <div class="col-md-8 col-md-offset-2 side-box">
+               <div id="sac-contact" class="col-md-8 col-md-offset-2 side-box">
                   <hr />
 
                   <h6 class="home-title question">¿Aún tienes más preguntas? ¡Haznos todas las que quieras!</h6>

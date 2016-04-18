@@ -13,7 +13,13 @@
 	</div><!-- #main -->
 	<?php do_action( 'explore_before_footer' ); ?>
 		<footer id="colophon" class="clearfix">
+			
+			<div class="footer-map">
+				<?php echo do_shortcode('[wpgmza id="1"]'); ?>
+			</div>
+
 			<?php get_sidebar( 'footer' ); ?>
+
 			<div class="footer-socket-wrapper clearfix">
 				<div class="inner-wrap">
 					<div class="footer-socket-area">

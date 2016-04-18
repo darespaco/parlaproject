@@ -11,6 +11,8 @@
  */
 ?>
 
+
+
 <?php
    switch (get_the_title()) {
       case 'Niños':
@@ -39,6 +41,7 @@
 
 <?php get_header(); ?>
    
+   <?php echo do_shortcode('[ssbp]'); ?>
    
    <div class="inner-wrap">
 

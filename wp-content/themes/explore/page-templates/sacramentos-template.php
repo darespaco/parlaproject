@@ -38,108 +38,104 @@
       				?>
 
       			<?php endwhile; ?>
-               <div class="anchor">
-                  <a class="go-anchor-button" href="#anchor-second">
-                     <img id="anchor-second" class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
-                  </a>
-               </div>
+               
             </div><!-- #content -->
          </div>
+      </div><!-- primary -->
 
-         <div class="selector">
-            <div class="sel-element">
-               <h5>- Bautismo -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-bautismo.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 258 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
+      <div id="sacramentos-selector" class="selector blue-bg">
+         <div class="sel-element">
+            <h5>- Bautismo -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-bautismo.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 258 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
                </div>
             </div>
-
-            <div class="sel-element">
-               <h5>- Penitencia -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-penitencia.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 262 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="sel-element">
-               <h5>- Eucaristía -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-eucaristia.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 264 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="sel-element">
-               <h5>- Confirmación -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-confirmacion.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 260 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="sel-element">
-               <h5>- Matrimonio -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-matrimonio.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 270 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
-               </div>
-            </div>
-
-            <div class="sel-element">
-               <h5>- Orden Sacerdotal -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-orden.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 266 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
-               </div>
-            </div>
-            
-            <div class="sel-element">
-               <h5>- Unción de enfermos -</h5>
-               <div class="sel-box">
-                  <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-uncion.png'; ?> />
-                  <div class="sel-icon">
-                     <a href=<?php echo esc_url( get_permalink( 268 ) ); ?> />
-                        <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
-                     </a>
-                  </div>
-               </div>
-            </div>
-
          </div>
 
-         <?php
-         $layout = explore_sidebar_layout();
-         if ( $layout == "both_sidebar" ) {
-            get_sidebar( 'left' );
-         }
-         ?>
-   	</div><!-- #primary -->
+         <div class="sel-element">
+            <h5>- Penitencia -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-penitencia.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 262 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="sel-element">
+            <h5>- Primera Comunión -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-eucaristia.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 264 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="sel-element">
+            <h5>- Confirmación -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-confirmacion.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 260 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="sel-element">
+            <h5>- Matrimonio -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-matrimonio.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 270 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="sel-element">
+            <h5>- Orden Sacerdotal -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-orden.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 266 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
+               </div>
+            </div>
+         </div>
+         
+         <div class="sel-element">
+            <h5>- Unción de enfermos -</h5>
+            <div class="sel-box">
+               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-uncion.png'; ?> />
+               <div class="sel-icon">
+                  <a href=<?php echo esc_url( get_permalink( 268 ) ); ?> />
+                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  </a>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <?php
+      $layout = explore_sidebar_layout();
+      if ( $layout == "both_sidebar" ) {
+         get_sidebar( 'left' );
+      }
+      ?>
 
    	<?php
       if ( $layout != "no_sidebar_full_width" &&  $layout != "no_sidebar_content_centered" ) {
