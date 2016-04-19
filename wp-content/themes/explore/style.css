@@ -112,7 +112,7 @@ input,
 select,
 textarea {
 	color: #666666;
-	font: 18px 'BrandonText-Light', sans-serif;
+	font: 16px 'BentonSans Book', sans-serif;
 	line-height: 20px;
 	word-wrap: break-word;
 }
@@ -1768,7 +1768,7 @@ a#scroll-up:hover {
 	border: 1px solid #EAEAEA;
 	font-size: 14px;
 	color: #666666;
-	font-family: 'BrandonText-Light', sans-serif;
+	font-family: 'BentonSans Book', sans-serif;
 	margin: 0 0 20px;
 }
 .post .entry-meta .by-author,
