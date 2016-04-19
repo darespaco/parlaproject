@@ -17,6 +17,8 @@
    switch (get_the_title()) {
       case 'Bautismo':
          $slider_img = "baut-bg";
+         $img_url = "/img/slide-bautismo.png";
+         $img_title = "'El bautismo de Cristo' - Juan Fernández de Navarrete";
          $quote = "“Porque todos los que habéis sido bautizados en Cristo, de Cristo estáis revestidos”";
          $sign = "- Gálatas 3:27 -";
          $questions = array(
@@ -33,7 +35,9 @@
          );
          break;
       case "Penitencia":
+         $img_url = "/img/slide-penitencia.png";
          $slider_img = "peni-bg";
+         $img_title = "'Regreso del hijo pródigo' - Bartolomé Esteban Murillo";
          $quote = "“Porque todos los que habéis sido bautizados en Cristo, de Cristo estáis revestidos”";
          $sign = "- Gálatas 3, 27 -";
          $questions = array(
@@ -51,6 +55,8 @@
          break;
       case 'Confirmación':
          $slider_img = "conf-bg";
+         $img_url = "/img/slide-confirmacion.png";
+         $img_title = "'Pentecostés' - Giotto di Bondone";
          $quote = "“Donde está el Espíritu del Señor, allí está la libertad.”";
          $sign = "- Corintios 3, 17 -";
          $questions = array(
@@ -68,6 +74,8 @@
          break;
       case 'Matrimonio':
          $slider_img = "matr-bg";
+         $img_url = "/img/slide-matrimonio.png";
+         $img_title = "'Sagrada Familia del pajarito' - Bartolomé Esteban Murillo";
          $quote = "“Esta es nuestra confianza: que el que ha inaugurado entre vosotros esta buena obra, la llevará adelante hasta el Día de Cristo Jesús.”";
          $sign = "- Filipenses 1, 3-11 -";
          $questions = array(
@@ -85,6 +93,8 @@
          break;
       case 'Unción de Enfermos':
          $slider_img = "unci-bg";
+         $img_url = "/img/slide-uncion.png";
+         $img_title = "'La curación de un ciego' - El Greco";
          $quote = "“Le sostiene Yahveh en su lecho de dolor; tú rehaces entera la postración en que se sume”";
          $sign = "- Salmo 40, 1-3 -";
          $questions = array(
@@ -101,6 +111,8 @@
          break;
       case 'Orden Sacerdotal':
          $slider_img = "orde-bg";
+         $img_url = "/img/slide-ordenacion.png";
+         $img_title = "'La vocación de San Mateo' - Caravaggio";
          $quote = "“El hombre de la palabra de Dios, el hombre del sacramento, el hombre del misterio de la fe”";
          $sign = "- San Juan Pablo II -";
          $questions = array(
@@ -118,6 +130,8 @@
          break;
       case 'Primera Comunión':
          $slider_img = "euca-bg";
+         $img_url = "/img/slide-eucaristia.png";
+         $img_title = "'Última Cena' - Giotto di Bondone";
          $quote = "“Tomó luego pan, y, dadas las gracias, lo partió y se lo dio diciendo: Este es mi cuerpo que es entregado por vosotros; haced esto en recuerdo mío.”";
          $sign = "- Lucas 22, 19 -";
          $questions = array(
@@ -143,17 +157,30 @@
 <?php get_header(); ?>
       
       <?php echo do_shortcode('[ssbp]'); ?>
-      
-      <div class="main-img <?php echo $slider_img ?>">
-         <div class="page-title-slider">
-            <?php the_title() ?>
-            <br>
-            <div class="small-line"></div>
+
+      <div class="image-big-box">
+         <img class="btn close-big-box" src=<?php echo get_template_directory_uri() . '/img/icon-close.png'; ?> >
+         <div class="img-box-title">
+            <?php echo $img_title ?>
          </div>
-         <span id="anchor-first" class="anchor"></span>
-         <a class="go-anchor-button" href="#anchor-first">
-            <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
-         </a>
+         <img class="image-big" src=<?php echo get_template_directory_uri() . $img_url; ?> >
+      </div>         
+      
+      <div class="main-img">
+            <div class="<?php echo $slider_img ?> animate-bg"></div>
+            <div class="page-title-slider">
+               <?php the_title() ?>
+               <br>
+               <div class="small-line"></div>
+            </div>
+            <img class="btn make-bigger" src=<?php echo get_template_directory_uri() . '/img/bigger.png'; ?> >
+            <div class="img-title">
+               <?php echo $img_title ?>
+            </div>
+            <a class="go-anchor-button btn-scroll-arrow" href="#anchor-first">
+               <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
+            </a>
+            <span id="anchor-first" class="anchor"></span>
       </div>
 
       <?php do_action( 'explore_before_body_content' ); ?>

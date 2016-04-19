@@ -45,10 +45,6 @@
          <div id="act-selector" class="selector blue-bg">
             <div class="auxiliar-down">
                <h6 class="hint">¡Entra y entérate de las actividades que realizamos en la parroquia!</h6>
-               <a class="go-anchor-button" href="#ns">
-                  <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
-               </a>
-               <span id="ns" class="anchor"></span>
             </div>
             <div class="sel-element">
                <h5>Niños</h5>
@@ -85,9 +81,14 @@
                   </div>
                </div>
             </div>
+
+            <a class="go-anchor-button btn-scroll-arrow down left" href="#ns">
+               <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
+            </a>
+            <span id="ns" class="anchor"></span>
          </div>
 
-         <div class="col-md-10 col-md-offset-1 home-calendar">
+         <div class="col-md-8 home-calendar">
 
             <h4 class="home-title">
                Calendario
@@ -95,6 +96,20 @@
                <div class="line"></div>
             </h4>
             <?php echo do_shortcode('[ai1ec view="monthly"]'); ?>
+         </div>
+
+         <div class="col-md-4 fb-sidebar">
+
+            <a href="https://facebook.com/parroquia.asuncionparla" target="_blank">
+               <h4 class="home-title">
+                  Nuestro Facebook
+                  <br>
+                  <div class="line"></div>
+               </h4>
+            </a>
+            <div class="fb-timeline">
+               <?php echo do_shortcode('[dpSocialTimeline id=1]'); ?>
+            </div>
          </div>
 
    	</div><!-- #primary -->

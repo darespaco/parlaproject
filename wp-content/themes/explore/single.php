@@ -23,9 +23,17 @@
                <?php if ( get_theme_mod( 'explore_related_posts_activate', '0' ) == 1 ) {
                   get_template_part( 'inc/related-posts' );
                } ?>
-            <hr>
 
-            
+               <hr>
+
+               <div class="suscribe-post">
+                  <?php 
+                     if ( is_active_sidebar( 'suscribe-post' ) ) :
+                        dynamic_sidebar( 'suscribe-post' );
+                     endif; 
+                  ?>
+               </div>
+               
    				<?php
                   /*
    					do_action( 'explore_before_comments_template' );
@@ -41,10 +49,10 @@
    		</div><!-- #content -->
 
          <?php
-         $layout = explore_sidebar_layout();
-         if ( $layout == "both_sidebar" ) {
-            get_sidebar( 'left' );
-         }
+            $layout = explore_sidebar_layout();
+            if ( $layout == "both_sidebar" ) {
+               get_sidebar( 'left' );
+            }
          ?>
    	</div><!-- #primary -->
 

@@ -24,6 +24,7 @@
          </div>
 
    		<div id="sac-contact" class="col-md-8 col-md-offset-2 side-box">
+            <p class="home-subtitle">Teléfono: (+34) 916787878</p>
             <hr />
 
             <h6 class="home-title question">¡Cuéntanos! ¿Alguna pregunta sobre la parroquia?</h6>

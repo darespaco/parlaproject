@@ -14,11 +14,11 @@
 <?php get_header(); ?>
 
       <div class="home-slider">
-       	<?php echo do_shortcode('[smartslider3 slider=2]'); ?>
-         <a class="go-anchor-button" href="#ns">
+         <?php echo do_shortcode('[smartslider3 slider=2]'); ?>
+         <span id="ns" class="anchor"></span>
+         <a class="go-anchor-button btn-scroll-arrow" href="#ns">
             <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
          </a>
-         <span id="ns" class="anchor"></span>
       </div>
 
       <div class="home-content">

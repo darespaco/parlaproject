@@ -5,11 +5,21 @@
 jQuery(document).ready(function(){
 
   var RSopened = false;
-  
+  var SearchOpened = false; 
 
    // For Search Icon Toggle effect added at the top
    jQuery(".search-top").click(function(){
-      jQuery("#masthead .search-form-top").toggle();
+      if (!SearchOpened) {
+        jQuery("#masthead .search-form-top").toggle(300);
+        SearchOpened = true;
+      }
+   });
+
+   jQuery("#main").click(function(){
+      if (SearchOpened) {
+        jQuery("#masthead .search-form-top").toggle(300);
+        SearchOpened = false;
+      }
    });
 
    jQuery(".header-widget-controller").click(function(){
@@ -97,5 +107,16 @@ jQuery(document).ready(function(){
 
   });
 
-});
+  jQuery('.make-bigger').click(function() {
+      jQuery('.image-big-box').show(300);
+  });
 
+  jQuery('.close-big-box').click(function() {
+      console.log("Cerrando..");
+      jQuery('.image-big-box').hide(300);
+  });
+
+
+  
+
+});

@@ -20,7 +20,7 @@
             <div class="small-line"></div>
          </div>
          <span id="anchor-first" class="anchor"></span>
-         <a class="go-anchor-button" href="#anchor-first">
+         <a class="go-anchor-button btn-scroll-arrow" href="#anchor-first">
             <img class="icon-down" src=<?php echo get_template_directory_uri() . '/img/icon-down.png'; ?> >
          </a>
       </div>
