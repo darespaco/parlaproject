@@ -50,7 +50,7 @@ wp_head();
 						if( ( get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'both' || get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'logo_only' ) && get_theme_mod( 'explore_header_logo_image', '' ) != '' ) {
 						?>
 							<div id="header-logo-image">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() . '/img/logo/logo_forum_definitivo.png'; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_theme_mod( 'explore_header_logo_image', '' ); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
 							</div><!-- #header-logo-image -->
 						<?php 
 						}
