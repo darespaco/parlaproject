@@ -21,11 +21,20 @@
          </a>
       </div>
 
+      <div class="visible-phone mobile-navigation">
+         <div class="mb-avisos-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/avisos-icon.png'; ?>></div>
+         <div class="mb-horarios-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/horarios-icon.png'; ?>></div>
+         <div class="mb-calendario-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/calendario-icon.png'; ?>></div>
+         <div class="mb-evangelio-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/evangelio-icon.png'; ?>></div>
+         <div class="mb-redes-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/redes-icon.png'; ?>></div>
+         <div class="mb-suscribete-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/suscribete-icon.png'; ?>></div>
+      </div>
+
       <div class="home-content">
 
          <div class="home-main">
 
-         		<div class="col-sm-8 col-md-8" role="complementary">
+         		<div class="mb-avisos-section col-xs-12 col-md-8" role="complementary">
 
                   <?php if ( is_active_sidebar( 'home-main-left' ) ) : ?>
                      <?php dynamic_sidebar( 'home-main-left' ); ?>
@@ -33,7 +42,7 @@
 
          		</div>
 
-         		<div class="col-sm-4 col-md-4 border-left" role="complementary">
+         		<div class="mb-horarios-section col-xs-12 col-md-4 border-left" role="complementary">
 
             		<?php if ( is_active_sidebar( 'home-main-right' ) ) : ?>
          			<?php dynamic_sidebar( 'home-main-right' ); ?>
@@ -45,17 +54,19 @@
 
          <div class="home-second">
 
-            <div class="col-md-8 home-calendar">
+            <div class="mb-calendario-section">
+               <div class="col-md-8 home-calendar">
 
-               <h4 class="home-title">
-                  Calendario
-                  <br>
-                  <div class="line"></div>
-               </h4>
-               <?php echo do_shortcode('[ai1ec view="monthly"]'); ?>
+                  <h4 class="home-title">
+                     Calendario
+                     <br>
+                     <div class="line"></div>
+                  </h4>
+                  <?php echo do_shortcode('[ai1ec view="monthly"]'); ?>
+               </div>
             </div>
 
-            <div class="col-md-4 home-evangeli border-left">
+            <div class="mb-evangelio-section col-md-4 home-evangeli border-left">
 
                   <?php
                      $config_final=file_get_contents('http://evangeli.net/evangelio');
@@ -81,13 +92,50 @@
             </div>
          </div>        
 
-         <div class="home-middle">
+         <div class="mb-redes-section home-middle">
             <h4 class="home-title">Redes Sociales</h4>
             <h6 class="home-subtitle">¡No te pierdas las últimas novedades!</h6>
             <hr class="line">
             <br>
 
-            <div class="rrss-box">
+            <div class="visible-phone mb-rrss-box">
+               <div class="col-xs-4">
+                  <div class="mb-pope-icon">
+                     <img class="mb-rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-pope.jpeg'; ?> />
+                  </div>
+                  <p class="home-heading">Papa Francisco</p>
+               </div>
+               
+
+               <div class="col-xs-4">
+                  <div class="mb-parroquia-icon">
+                     <img class="mb-rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-parroquia.jpg'; ?> />
+                  </div>
+                  <p class="home-heading">Parroquia Nuestra Señora de la Asunción</p>
+
+               </div>
+
+               <div class="col-xs-4">
+                     <div class="mb-diocesis-icon">
+                        <img class="mb-rs-icon" src=<?php echo get_template_directory_uri() . '/img/icon-getafe.jpg'; ?> />
+                     </div>
+                     <p class="home-heading">Diócesis de Getafe</p>
+               </div>
+
+               <div class="mb-parroquia-timeline col-xs-12">
+                  <?php echo do_shortcode('[dpSocialTimeline id=1]'); ?>
+               </div>
+               
+               <div class="mb-pope-timeline col-xs-12">
+                  <?php echo do_shortcode('[dpSocialTimeline id=2]'); ?>
+               </div>
+
+               <div class="mb-diocesis-timeline col-xs-12">
+                  <?php echo do_shortcode('[dpSocialTimeline id=3]'); ?>
+               </div>
+            </div>
+
+            <div class="hidden-phone rrss-box">
 
                <div class="col-md-4">
                   <a href="https://twitter.com/pontifex_es" target="_blank">
@@ -124,7 +172,7 @@
 
 
 
-         <div class="selector blue-bg">
+         <div class="hidden-phone selector blue-bg">
                <h6>¿Qué puedes encontrar en la web?</h6>
                <div class="sel-element sel-small">
                   <h5>Vida Parroquial</h5>
@@ -179,9 +227,17 @@
                </div>
          </div>
 
-         <div class="home-bottom">
+         <div class="mb-suscribete-section home-bottom">
 
             <div class="home-bottom-content">
+               <div class="visible-phone">
+                 <h3 class="home-title">
+                     Suscríbete
+                     <br>
+                     <div class="line"></div>
+                  </h3>
+                  <p class="home-heading">¡Y no te pierdas nada!</p>
+               </div>
               <?php es_subbox( $namefield = "NO", $desc = "", $group = "" ); ?>
             </div>
 

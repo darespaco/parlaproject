@@ -45,7 +45,7 @@
 
       <div id="sacramentos-selector" class="selector blue-bg">
          <div class="sel-element">
-            <h5>- Bautismo -</h5>
+            <h5>Bautismo</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-bautismo.png'; ?> />
                <div class="sel-icon">
@@ -57,7 +57,7 @@
          </div>
 
          <div class="sel-element">
-            <h5>- Penitencia -</h5>
+            <h5>Penitencia</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-penitencia.png'; ?> />
                <div class="sel-icon">
@@ -69,7 +69,7 @@
          </div>
 
          <div class="sel-element">
-            <h5>- Primera Comunión -</h5>
+            <h5>Primera Comunión</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-eucaristia.png'; ?> />
                <div class="sel-icon">
@@ -81,7 +81,7 @@
          </div>
 
          <div class="sel-element">
-            <h5>- Confirmación -</h5>
+            <h5>Confirmación</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-confirmacion.png'; ?> />
                <div class="sel-icon">
@@ -93,7 +93,7 @@
          </div>
 
          <div class="sel-element">
-            <h5>- Matrimonio -</h5>
+            <h5>Matrimonio</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-matrimonio.png'; ?> />
                <div class="sel-icon">
@@ -105,7 +105,7 @@
          </div>
 
          <div class="sel-element">
-            <h5>- Orden Sacerdotal -</h5>
+            <h5>Orden Sacerdotal</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-orden.png'; ?> />
                <div class="sel-icon">
@@ -117,7 +117,7 @@
          </div>
          
          <div class="sel-element">
-            <h5>- Unción de enfermos -</h5>
+            <h5>Unción de enfermos</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-uncion.png'; ?> />
                <div class="sel-icon">

@@ -26,9 +26,12 @@
 		menu.className += 'menu-primary-container';
 
 	button.onclick = function() {
-		if ( -1 !== container.className.indexOf( 'main-small-navigation' ) )
+		if ( -1 !== container.className.indexOf( 'main-small-navigation' ) ) {
+			jQuery('.main-small-navigation ul').hide(300);
 			container.className = container.className.replace( 'main-small-navigation', 'main-navigation' );
-		else
+		} else {
 			container.className = container.className.replace( 'main-navigation', 'main-small-navigation' );
+			jQuery('.main-small-navigation ul').show(300);
+		}
 	};
 } )();

@@ -112,9 +112,86 @@ jQuery(document).ready(function(){
   });
 
   jQuery('.close-big-box').click(function() {
-      console.log("Cerrando..");
       jQuery('.image-big-box').hide(300);
   });
+
+
+  //Movil
+
+  jQuery('.mb-avisos-icon').click(function() {
+      jQuery('.mb-avisos-section').toggle(300);
+      jQuery('.mb-horarios-section').hide(300);
+      jQuery('.mb-calendario-section').hide(300);
+      jQuery('.mb-evangelio-section').hide(300);
+      jQuery('.mb-redes-section').hide(300);
+      jQuery('.mb-suscribete-section').hide(300);
+  })
+
+  jQuery('.mb-horarios-icon').click(function() {
+      jQuery('.mb-avisos-section').hide(300);
+      jQuery('.mb-horarios-section').toggle(300);
+      jQuery('.mb-calendario-section').hide(300);
+      jQuery('.mb-evangelio-section').hide(300);
+      jQuery('.mb-redes-section').hide(300);
+      jQuery('.mb-suscribete-section').hide(300);
+  })
+
+  jQuery('.mb-calendario-icon').click(function() {
+      jQuery('.mb-avisos-section').hide(300);
+      jQuery('.mb-horarios-section').hide(300);
+      jQuery('.mb-calendario-section').toggle(300);
+      jQuery('.mb-evangelio-section').hide(300);
+      jQuery('.mb-redes-section').hide(300);
+      jQuery('.mb-suscribete-section').hide(300);
+  })
+
+  jQuery('.mb-evangelio-icon').click(function() {
+      jQuery('.mb-avisos-section').hide(300);
+      jQuery('.mb-horarios-section').hide(300);
+      jQuery('.mb-calendario-section').hide(300);
+      jQuery('.mb-evangelio-section').toggle(300);
+      jQuery('.mb-redes-section').hide(300);
+      jQuery('.mb-suscribete-section').hide(300);
+  })
+
+  jQuery('.mb-redes-icon').click(function() {
+      jQuery('.mb-avisos-section').hide(300);
+      jQuery('.mb-horarios-section').hide(300);
+      jQuery('.mb-calendario-section').hide(300);
+      jQuery('.mb-evangelio-section').hide(300);
+      jQuery('.mb-redes-section').toggle(300);
+      jQuery('.mb-suscribete-section').hide(300);
+  })
+
+  jQuery('.mb-suscribete-icon').click(function() {
+      jQuery('.mb-avisos-section').hide(300);
+      jQuery('.mb-horarios-section').hide(300);
+      jQuery('.mb-calendario-section').hide(300);
+      jQuery('.mb-evangelio-section').hide(300);
+      jQuery('.mb-redes-section').hide(300);
+      jQuery('.mb-suscribete-section').toggle(300);
+  })
+
+  jQuery('.mb-pope-icon').click(function() {
+      jQuery('.mb-pope-timeline').toggle(300);
+      jQuery('.mb-parroquia-timeline').hide(300);
+      jQuery('.mb-diocesis-timeline').hide(300);
+  })
+
+  jQuery('.mb-parroquia-icon').click(function() {
+      jQuery('.mb-pope-timeline').hide(300);
+      jQuery('.mb-parroquia-timeline').toggle(300);
+      jQuery('.mb-diocesis-timeline').hide(300);
+  })
+
+  jQuery('.mb-diocesis-icon').click(function() {
+      jQuery('.mb-pope-timeline').hide(300);
+      jQuery('.mb-parroquia-timeline').hide(300);
+      jQuery('.mb-diocesis-timeline').toggle(300);
+  })
+
+
+
 
 
   
