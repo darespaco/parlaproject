@@ -2966,6 +2966,72 @@ a#scroll-up:hover {
 	}
 }
 @media screen and (max-width: 767px) {
+
+	.hidden-big-phone {
+		display: none !important;
+	}
+
+	.visible-big-phone {
+		display: block;
+	}
+
+	#religious-time {
+		display: none;
+	}
+
+	.mb-header-logo {
+		width: 50% !important;
+	}
+
+	#header-text-nav-wrap {
+		text-align: center;
+	}
+
+	#header-left-section {
+		position: relative;
+		display: inline-block;
+		margin: 0;
+		margin-left: 45px;
+		float: none;
+	}
+
+	#header-logo-image {
+		position: relative;
+		float: none;
+		max-width: none;
+	}
+
+	.mobile-navigation .col-xs-4 {
+		padding-right: 7px !important;
+		padding-left: 7px !important;
+	}
+
+	.menu-toggle {
+		position: absolute;
+		top: 0;
+	}
+
+	.sub-menu {
+		margin: 0 !important;
+		display: none !important;
+	}
+
+	.sub-menu .menu-item a {
+		font-size: 14px !important;
+		color: #d5d5d5 !important;
+		text-transform: capitalize !important;
+	}
+
+	.fa.search-top {
+		line-height: 65px;
+	}
+
+	.fa-search:before {
+		font-size: 25px;
+		padding-top: 12px;
+		padding-left: 8px;
+	}
+
 	.tg-one-half, .tg-one-third, .tg-one-fourth {
 		float: none;
 		width: 100%;
@@ -3082,6 +3148,7 @@ a#scroll-up:hover {
 		position: relative;
 		display: inline-block;
 		margin: 0;
+		margin-left: 45px;
 		float: none;
 	}
 
@@ -3166,6 +3233,11 @@ a#scroll-up:hover {
 	.mobile-navigation .col-xs-4 {
 		padding-right: 7px !important;
 		padding-left: 7px !important;
+	}
+
+	.menu-toggle {
+		position: absolute;
+		top: 0;
 	}
 
 	.home-main,
