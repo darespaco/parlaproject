@@ -3163,6 +3163,11 @@ a#scroll-up:hover {
 		margin-bottom: 0;
 	}
 
+	.mobile-navigation .col-xs-4 {
+		padding-right: 7px !important;
+		padding-left: 7px !important;
+	}
+
 	.home-main,
 	.home-second,
 	.home-middle,
