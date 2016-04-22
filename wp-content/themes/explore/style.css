@@ -641,7 +641,7 @@ body {
    display: none;
    padding: 10px;
    position: absolute;
-   right: 10px;
+   right: 0;
    top: 10px;
    z-index: 9999;
    background-color: #066D8B;
@@ -2435,7 +2435,7 @@ a#scroll-up:hover {
 	width: 100%;
 	text-align: center;
 	height: 350px;
-	background-image: url("./img/machine-wr.png");
+	background-image: url("./img/machine-w.png");
 	background-size: cover;
 	background-origin: padding-box;
 	background-attachment: fixed;
@@ -2444,7 +2444,7 @@ a#scroll-up:hover {
 
 .home-bottom-content {
 	display: inline-block;
-	background-image: url("./img/suscribete-txt.png");
+	background-image: url("./img/suscribete-tx.png");
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	width: 30%;
@@ -2948,26 +2948,14 @@ a#scroll-up:hover {
 		top: 70px;
 		width: 100%;
 	}
-	.ssbp-wrap {
-		bottom: 30px;
-		left: 50% !important;
-	    -webkit-transform: translateX(-50%);
-	    -ms-transform: translateX(-50%);
-	    transform: translateX(-50%);
-	    top: auto !important;
-	    width: 100% !important;
-	    height: 40px;
-	    text-align: center;
-	}
-	.ssbp-list li {
-		display: inline-block !important;
-		margin-top: 6px !important;
-		padding-left: 6px !important;
-		padding-bottom: 6px !important;
-		padding-right: 6px !important;
-	}
 	.main-img {
 		margin-bottom: 35px;
+	}
+	.ssbp-wrap.ssbp--fixed-left {
+		top: auto !important;
+		padding-bottom: 0;
+	    padding-left: 0;
+	    padding-right: 0;
 	}
 }
 @media screen and (max-width: 767px) {
