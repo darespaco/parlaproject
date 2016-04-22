@@ -639,6 +639,7 @@ body {
    border: 0px solid #eaeaea;
    width: 70%;
    display: none;
+   margin-right: 60px;
    padding: 10px;
    position: absolute;
    right: 0;
@@ -2947,6 +2948,12 @@ a#scroll-up:hover {
 	.search-form-top {
 		top: 70px;
 		width: 100%;
+		margin-right: 0;
+		text-align: center;
+	}
+	.search-wrap {
+		text-align: center;
+		display: inline-block;
 	}
 	.main-img {
 		margin-bottom: 35px;
@@ -3046,7 +3053,7 @@ a#scroll-up:hover {
    a.slide-next { right: 1%; }
    a.slide-prev { left: 1%; }
 }
-@media only screen and (max-width: 435px) {
+@media only screen and (max-width: 600px) {
    #page {
    	width: 97%;
    }
@@ -3063,12 +3070,17 @@ a#scroll-up:hover {
 		display: block;
 	}
 
+	.mb-header-logo {
+		width: 70% !important;
+	}
+
 	#header-text-nav-wrap {
 		text-align: center;
 	}
 
 	#header-left-section {
 		position: relative;
+		display: inline-block;
 		margin: 0;
 		float: none;
 	}
@@ -3080,7 +3092,7 @@ a#scroll-up:hover {
 	}
 
 	.search-form-top {
-		top: 80px;
+		top: 0px;
 	}
 
 	.sub-menu {
@@ -3256,5 +3268,11 @@ a#scroll-up:hover {
 		padding: 0;
 	}
 
+}
+
+@media only screen and (max-width: 322px) {
+	.mb-header-logo {
+		width: 65% !important;
+	}
 }
 }

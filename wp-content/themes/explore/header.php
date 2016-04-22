@@ -44,7 +44,7 @@ wp_head();
 		<div id="header-text-nav-container">
 			<div class="inner-wrap">
 
-				<div id="header-text-nav-wrap" class="clearfix">
+				<div id="header-text-nav-wrap" class="hidden-phone clearfix">
 					<div id="header-left-section">
 						<?php
 						if( ( get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'both' || get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'logo_only' ) && get_theme_mod( 'explore_header_logo_image', '' ) != '' ) {
@@ -98,6 +98,69 @@ wp_head();
 							}
 							?>
 						</nav>
+			    	</div><!-- #header-right-section -->
+
+			   </div><!-- #header-text-nav-wrap -->
+
+			   <!-- MOBILE VERSION HEADER -->
+
+			   <div id="header-text-nav-wrap" class="visible-phone clearfix">
+					
+					<div id="header-right-section">
+	                  <?php if( is_active_sidebar( 'explore_header_sidebar_one' ) ||
+	   is_active_sidebar( 'explore_header_sidebar_two' ) ||
+	   is_active_sidebar( 'explore_header_sidebar_three' ) ) : ?>
+	                     <i class="fa fa-arrow-down header-widget-controller"></i>
+	                  <?php endif; ?>
+	                  <?php explore_social_menu(); ?>
+							<nav id="site-navigation" class="main-navigation" role="navigation">
+								<p class="menu-toggle"></p>
+								<?php
+								if ( has_nav_menu( 'primary' ) ) {
+									wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class'    => 'menu menu-primary-container' ) );
+								} else {
+									wp_page_menu();
+								}
+								?>
+							</nav>
+
+						<div id="header-left-section" class="mb-header-logo">
+						<?php
+						if( ( get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'both' || get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'logo_only' ) && get_theme_mod( 'explore_header_logo_image', '' ) != '' ) {
+						?>
+							<div id="header-logo-image">
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri() . '/img/logo/logo_forum_definitivo.png'; ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+							</div><!-- #header-logo-image -->
+						<?php 
+						}
+
+                  $screen_reader = '';
+						if( get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'logo_only' || get_theme_mod( 'explore_show_header_logo_text', 'text_only' ) == 'none' ) {
+                     $screen_reader = 'screen-reader-text';
+                  }
+						?>
+						<div id="header-text" class="<?php echo $screen_reader; ?>">
+                     <?php if ( is_front_page() || is_home() ) : ?>
+   							<h1 id="site-title">
+   								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+   							</h1>
+                     <?php else : ?>
+                        <h3 id="site-title">
+                           <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+                        </h3>
+                     <?php endif; ?>
+                     <?php
+                     $description = get_bloginfo( 'description', 'display' );
+                     if ( $description || is_customize_preview() ) : ?>
+							  <p id="site-description"><?php bloginfo( 'description' ); ?></p><!-- #site-description -->
+                     <?php endif;?>
+						</div><!-- #header-text -->
+					</div><!-- #header-left-section -->
+
+	                	<i class="fa fa-search search-top"></i>
+	                	<div class="search-form-top">
+	                    	 <?php get_search_form(); ?>
+	                  	</div><!-- .search-form-top -->
 			    	</div><!-- #header-right-section -->
 
 			   </div><!-- #header-text-nav-wrap -->
