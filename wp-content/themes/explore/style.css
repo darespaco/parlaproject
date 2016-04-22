@@ -2846,6 +2846,15 @@ a#scroll-up:hover {
 	display: none;
 }
 
+.mb-avisos-section,
+.mb-horarios-section,
+.mb-calendario-section,
+.mb-evangelio-section,
+.mb-redes-section,
+.mb-suscribete-section {
+	display: inline-block;
+}
+
 /* =RESPONSIVE STRUCTURE
 ----------------------------------------------- */
 @media screen and (max-width: 1308px) {
@@ -2966,7 +2975,20 @@ a#scroll-up:hover {
 	    padding-left: 0;
 	    padding-right: 0;
 	}
+
+	div.modern div.dpSocialTimeline .dpSocialTimeline_item {
+   		width: 100% !important;
+   	}
+
+   	#act-selector .sel-element {
+   		width: 33% !important;
+   	}
+
+   	.make-bigger {
+   		display: none;
+    }
 }
+
 @media screen and (max-width: 767px) {
 
 	.hidden-big-phone {
@@ -3112,6 +3134,7 @@ a#scroll-up:hover {
       padding: 17px 0;
       width: 100%;
    }
+
 }
 @media screen and (max-width: 600px) {
    #featured-wide-slider .slider-title-head .entry-title a { font-size: 24px; }
@@ -3120,8 +3143,7 @@ a#scroll-up:hover {
    a.slide-prev, a.slide-next { padding: 6px 14px; }
    a.slide-next { right: 1%; }
    a.slide-prev { left: 1%; }
-}
-@media only screen and (max-width: 600px) {
+
    #page {
    	width: 97%;
    }
