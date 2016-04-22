@@ -15,7 +15,7 @@ div.dpSocialTimeline {
 	-moz-box-sizing: content-box;
 	-webkit-box-sizing: content-box;
 	box-sizing: content-box;
-	overflow: hidden !important;
+	overflow: hidden;
 	width: 100%;
 }
 
@@ -860,3 +860,4 @@ div.dark .dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineContent .d
        -o-transition-duration: 0s;
           transition-duration: 0s;
 }
+
