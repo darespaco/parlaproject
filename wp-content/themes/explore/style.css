@@ -801,6 +801,12 @@ li.default-menu {
    display: none;
 }
 
+#content_anchor {
+	display: none;
+	width: 100%;
+	height: 50px;
+	position: relative;
+}
 /* =SECONDARY MENUS
 ----------------------------------------------- */
 .small-menu {
@@ -2907,7 +2913,10 @@ a#scroll-up:hover {
 		display: none;
 	}
 	#header-left-section {
-   		margin-right: 10px;
+   		margin-right: 0px;
+   	}
+   	#header-logo-image {
+   		padding-left: 5px;
    	}
    	.inner-wrap {
 		width: 100%;
@@ -3143,6 +3152,16 @@ a#scroll-up:hover {
    a.slide-prev, a.slide-next { padding: 6px 14px; }
    a.slide-next { right: 1%; }
    a.slide-prev { left: 1%; }
+
+   #content_anchor {
+   	display: block;
+   }
+
+   #scroll-up {
+   	display: block !important;
+   	opacity: 0.6 !important;
+   	z-index: 100000;
+   }
 
    #page {
    	width: 97%;
