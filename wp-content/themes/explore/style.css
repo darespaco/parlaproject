@@ -2841,8 +2841,10 @@ a#scroll-up:hover {
 .left {
 	left: 35px !important;
 }
-	
 
+.visible-big-phone {
+	display: none;
+}
 
 /* =RESPONSIVE STRUCTURE
 ----------------------------------------------- */
