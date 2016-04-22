@@ -2852,15 +2852,6 @@ a#scroll-up:hover {
 	display: none;
 }
 
-.mb-avisos-section,
-.mb-horarios-section,
-.mb-calendario-section,
-.mb-evangelio-section,
-.mb-redes-section,
-.mb-suscribete-section {
-	display: inline-block;
-}
-
 /* =RESPONSIVE STRUCTURE
 ----------------------------------------------- */
 @media screen and (max-width: 1308px) {
@@ -2996,6 +2987,17 @@ a#scroll-up:hover {
    	.make-bigger {
    		display: none;
     }
+}
+
+@media screen and (max-width: 991px) {
+	.mb-avisos-section,
+	.mb-horarios-section,
+	.mb-calendario-section,
+	.mb-evangelio-section,
+	.mb-redes-section,
+	.mb-suscribete-section {
+		display: inline-block;
+	}
 }
 
 @media screen and (max-width: 767px) {
