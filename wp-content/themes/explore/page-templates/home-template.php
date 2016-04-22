@@ -22,14 +22,15 @@
       </div>
 
       <div class="visible-phone mobile-navigation">
-         <div class="mb-avisos-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/avisos-icon.png'; ?>></div>
-         <div class="mb-horarios-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/horarios-icon.png'; ?>></div>
-         <div class="mb-calendario-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/calendario-icon.png'; ?>></div>
-         <div class="mb-evangelio-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/evangelio-icon.png'; ?>></div>
-         <div class="mb-redes-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/redes-icon.png'; ?>></div>
-         <div class="mb-suscribete-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/suscribete-icon.png'; ?>></div>
+         <a href="#content_anchor"><div class="mb-avisos-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/avisos-icon.png'; ?>></div></a>
+         <a href="#content_anchor"><div class="mb-horarios-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/horarios-icon.png'; ?>></div></a>
+         <a href="#content_anchor"><div class="mb-calendario-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/calendario-icon.png'; ?>></div></a>
+         <a href="#content_anchor"><div class="mb-evangelio-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/evangelio-icon.png'; ?>></div></a>
+         <a href="#content_anchor"><div class="mb-redes-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/redes-icon.png'; ?>></div></a>
+         <a href="#content_anchor"><div class="mb-suscribete-icon col-xs-4"><img src=<?php echo get_template_directory_uri() . '/img/mobile/suscribete-icon.png'; ?>></div></a>
       </div>
 
+      <span id="content_anchor"></span>
       <div class="home-content">
 
          <div class="home-main">
