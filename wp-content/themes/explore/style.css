@@ -3272,7 +3272,17 @@ a#scroll-up:hover {
 
 @media only screen and (max-width: 322px) {
 	.mb-header-logo {
-		width: 65% !important;
+		padding-top: 2px;
+		width: 68% !important;
+	}
+
+	#header-logo-image {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.fa.search-top {
+		padding-left: 0;
 	}
 }
 }
