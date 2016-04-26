@@ -11,6 +11,8 @@
  */
 ?>
 
+<?php include 'simple_html_dom.php' ?>
+
 <?php get_header(); ?>
 
       <div class="home-slider">
@@ -70,13 +72,20 @@
             <div class="mb-evangelio-section col-md-4 home-evangeli border-left">
 
                   <?php
-                     $config_final=file_get_contents('http://evangeli.net/evangelio');
-                     $first_step = explode( '<p class="dia_white dia_liturgic" >' , $config_final );
+                     $html=file_get_contents('http://evangeli.net/evangelio');         
+                     $first_step = explode( 'dia_liturgic" >' , $html );
                      $second_step = explode('</p>' , $first_step[1] );
                      $ev_title = "Evangelio del día";
+                     $third_step = explode('class="santoral">' , $second_step[1] );
+                     $fourth_step = explode('</p>' , $third_step[1] );
                      $ev_subtitle = $second_step[0];
-                     $evangeli = $second_step[1];
-                  ?>
+                     $santoral = $fourth_step[0];
+                     if ($santoral) {
+                        $evangeli = $second_step[2];
+                     } else {
+                        $evangeli = $second_step[1];
+                     }
+                  ?> 
 
                   <h4 class="home-title">
                      <?php echo $ev_title; ?>
@@ -88,7 +97,7 @@
                      <?php echo $ev_subtitle; ?>
                   </p>
 
-                  <?php echo $evangeli; ?>
+                  <?php echo $evangeli . $evangeli_plus; ?>
 
             </div>
          </div>        

@@ -15,12 +15,25 @@
    	<?php do_action( 'explore_before_body_content' ); ?>
 
    	<div id="primary">
-   		<div id="content" class="clearfix">
+   		<div id="content" class="clearfix search-results">
+
+            <h2 class="home-title">Esto es lo que hemos encontrado...</h2>
+            <h5 id="number-results" class="home-heading"></h5>
+            <span class="line"></span>
+
    			<?php if ( have_posts() ) : ?>
+
+               <script> var results = 0; </script>
 
    				<?php while ( have_posts() ) : the_post(); ?>
 
-   					<?php get_template_part( 'content', get_post_format() ); ?>
+                  <script> results ++; </script>
+
+                  <div class="col-md-4">
+   					<?php 
+                        get_template_part( 'content', get_post_format() );
+                  ?>
+                  </div>
 
    				<?php endwhile; ?>
 
@@ -31,6 +44,8 @@
    				<?php get_template_part( 'no-results', 'search' ); ?>
 
    			<?php endif; ?>
+
+            <script> jQuery('#number-results').append(results + " resultados") </script>
 
    		</div><!-- #content -->
 

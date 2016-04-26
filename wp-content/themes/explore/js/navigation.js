@@ -34,4 +34,5 @@
 			jQuery('.main-small-navigation ul').show(300);
 		}
 	};
+
 } )();
