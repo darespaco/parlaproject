@@ -171,9 +171,9 @@ wp_head();
 
 			</div><!-- .inner-wrap -->
 			<?php
-				$religiousTime = "Cuaresma";
+				$religiousTime = "T. Ordinario";
 			?>
-			<a id="religious-time" class="btn-1" href="http://www.sancarlo.org/offerta"><?php echo $religiousTime ?></a>
+			<a id="religious-time" class="btn-1" href="http://conferenciaepiscopal.es/wp-content/uploads/2015/12/Calendario_liturgico_2015-2016.pdf"><?php echo $religiousTime ?></a>
 		</div><!-- #header-text-nav-container -->
 
 		<?php if( get_theme_mod( 'explore_header_image_position', 'above' ) == 'below' ) { explore_render_header_image(); } ?>
