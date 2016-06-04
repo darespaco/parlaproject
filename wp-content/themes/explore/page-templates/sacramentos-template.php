@@ -57,7 +57,7 @@
          </div>
 
          <div class="sel-element">
-            <h5>Penitencia</h5>
+            <h5>Confesión</h5>
             <div class="sel-box">
                <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-penitencia.png'; ?> />
                <div class="sel-icon">
@@ -104,18 +104,20 @@
             </div>
          </div>
 
+         <!--
          <div class="sel-element">
             <h5>Orden Sacerdotal</h5>
             <div class="sel-box">
-               <img class="sel-img" src=<?php echo get_template_directory_uri() . '/img/icon-orden.png'; ?> />
+               <img class="sel-img" src=<?php /*echo get_template_directory_uri() . '/img/icon-orden.png'; */?> />
                <div class="sel-icon">
-                  <a href=<?php echo esc_url( get_permalink( 266 ) ); ?> />
-                     <img class="sel-icon-img" src=<?php echo get_template_directory_uri() . '/img/icon-go.png'; ?> />
+                  <a href=<?php /*echo esc_url( get_permalink( 266 ) ); */?> />
+                     <img class="sel-icon-img" src=<?php /*echo get_template_directory_uri() . '/img/icon-go.png'; */?> />
                   </a>
                </div>
             </div>
          </div>
-         
+          -->
+
          <div class="sel-element">
             <h5>Unción de enfermos</h5>
             <div class="sel-box">

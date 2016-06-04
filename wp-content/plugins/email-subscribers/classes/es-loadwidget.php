@@ -19,7 +19,7 @@ class es_cls_widget
 		if( $es_desc <> "" ) { 
 			$es = $es . '<div class="es_caption">'.$es_desc.'</div>';
 		} 
-		$es = $es . '<div class="es_msg"><span id="es_msg_pg"></span></div>';
+		$es = $es . '<div id="es_msg"><span id="es_msg_pg"></span></div>';
 		if( $es_name == "YES" ) {
 			$es = $es . '<div class="es_lablebox">'.__('Name', 'email-subscribers').'</div>';
 			$es = $es . '<div class="es_textbox">';

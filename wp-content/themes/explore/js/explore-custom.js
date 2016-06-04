@@ -30,7 +30,7 @@ jQuery(document).ready(function(){
 	jQuery("#scroll-up").hide();
 	jQuery(function () {
 		jQuery(window).scroll(function () {
-			if (jQuery(this).scrollTop() > 1000) {
+			if (jQuery(this).scrollTop() > 800) {
 				jQuery('#scroll-up').fadeIn();
 			} else {
 				jQuery('#scroll-up').fadeOut();
@@ -91,6 +91,13 @@ jQuery(document).ready(function(){
       }
     }
 
+  });
+
+  jQuery('a').click(function(){
+      jQuery('html, body').animate({
+          scrollTop: jQuery( jQuery.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
   });
 
   jQuery('.moreRS').click(function() {
@@ -159,8 +166,9 @@ jQuery(document).ready(function(){
       jQuery('.mb-horarios-section').hide(300);
       jQuery('.mb-calendario-section').hide(300);
       jQuery('.mb-evangelio-section').hide(300);
-      jQuery('.mb-redes-section').toggle(300);
+      //jQuery('.mb-redes-section').toggle(300);
       jQuery('.mb-suscribete-section').hide(300);
+      toggleSocialMobile();
   })
 
   jQuery('.mb-suscribete-icon').click(function() {
@@ -190,10 +198,32 @@ jQuery(document).ready(function(){
       jQuery('.mb-diocesis-timeline').toggle(300);
   })
 
+var toggleSocialMobile = function() {
+  if (jQuery('.mb-redes-section').css('display') == 'none') {
+    jQuery('.mb-redes-section').toggle(300);
+  }
+}
 
+if (typeof newsletter_check !== "function") {
+window.newsletter_check = function (f) {
+    var re = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-]{1,})+\.)+([a-zA-Z0-9]{2,})+$/;
+    if (!re.test(f.elements["ne"].value)) {
+        alert("¡Oh, se te ha debido olvidar algo!");
+        return false;
+    }
+    for (var i=1; i<20; i++) {
+    if (f.elements["np" + i] && f.elements["np" + i].required && f.elements["np" + i].value == "") {
+        alert("");
+        return false;
+    }
+    }
+    if (f.elements["ny"] && !f.elements["ny"].checked) {
+        alert("You must accept the privacy statement");
+        return false;
+    }
+    return true;
+}
+}
 
-
-
-  
 
 });

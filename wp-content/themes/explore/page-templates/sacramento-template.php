@@ -34,7 +34,7 @@
             "Por supuesto que sí, no existen condiciones previas para ello más que el deseo de pertenecer al pueblo de la Iglesia, pertenencia que padres y padrinos de una forma especial deberán acompañar a lo largo de su vida."
          );
          break;
-      case "Penitencia":
+      case "Confesiones":
          $img_url = "/img/slide-penitencia.png";
          $slider_img = "peni-bg";
          $img_title = "'Regreso del hijo pródigo' - Bartolomé Esteban Murillo";
@@ -109,7 +109,7 @@
             "Por supuesto que sí, no existen condiciones previas para ello más que el deseo de pertenecer al pueblo de la Iglesia, pertenencia que padres y padrinos de una forma especial deberán acompañar a lo largo de su vida."
          );
          break;
-      case 'Orden Sacerdotal':
+      /*case 'Orden Sacerdotal':
          $slider_img = "orde-bg";
          $img_url = "/img/slide-ordenacion.png";
          $img_title = "'La vocación de San Mateo' - Caravaggio";
@@ -127,7 +127,7 @@
             "Por supuesto que sí, no existen condiciones previas para ello más que el deseo de pertenecer al pueblo de la Iglesia, pertenencia que padres y padrinos de una forma especial deberán acompañar a lo largo de su vida.", 
             "Por supuesto que sí, no existen condiciones previas para ello más que el deseo de pertenecer al pueblo de la Iglesia, pertenencia que padres y padrinos de una forma especial deberán acompañar a lo largo de su vida."
          );
-         break;
+         break;*/
       case 'Primera Comunión':
          $slider_img = "euca-bg";
          $img_url = "/img/slide-eucaristia.png";

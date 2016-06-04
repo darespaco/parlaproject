@@ -216,8 +216,8 @@ function customized_widgets_init() {
   ));
 
   register_sidebar(array(
-    'id'            => 'kids-punctual-act',
-    'name'          =>  __( 'Niños - Actividades puntuales', 'explore' ),
+    'id'            => 'kids-punctual-act-cat',
+    'name'          =>  __( 'Catequesis - A. puntuales', 'explore' ),
     'description'   =>  __( 'Used for footer widget area', 'explore' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
@@ -226,8 +226,48 @@ function customized_widgets_init() {
   ));
 
   register_sidebar(array(
-    'id'            => 'kids-general-act',
-    'name'          =>  __( 'Niños - Actividades generales', 'explore' ),
+    'id'            => 'kids-general-act-cat',
+    'name'          =>  __( 'Catequesis - A. generales', 'explore' ),
+    'description'   =>  __( 'Used for footer widget area', 'explore' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
+
+    register_sidebar(array(
+    'id'            => 'kids-punctual-act-mov',
+    'name'          =>  __( 'Movimiento Infantil - A. puntuales', 'explore' ),
+    'description'   =>  __( 'Used for footer widget area', 'explore' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'id'            => 'kids-general-act-mov',
+    'name'          =>  __( 'Movimiento Infantil - A. generales', 'explore' ),
+    'description'   =>  __( 'Used for footer widget area', 'explore' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
+
+    register_sidebar(array(
+    'id'            => 'kids-punctual-act-juv',
+    'name'          =>  __( 'Juveniles - A. puntuales', 'explore' ),
+    'description'   =>  __( 'Used for footer widget area', 'explore' ),
+    'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</div>',
+    'before_title'  => '<h3 class="widgettitle">',
+    'after_title'   => '</h3>',
+  ));
+
+  register_sidebar(array(
+    'id'            => 'kids-general-act-juv',
+    'name'          =>  __( 'Juveniles - A. generales', 'explore' ),
     'description'   =>  __( 'Used for footer widget area', 'explore' ),
     'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',

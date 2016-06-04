@@ -32,7 +32,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	font-size: 100%;
 	font-style: inherit;
 	font-weight: inherit;
-	margin: 0;
+	/*margin: 0;*/
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
@@ -605,14 +605,14 @@ body {
 }
 .fa.search-top {
    color: #ffffff;
-   line-height: 75px;
+   line-height: 90px;
    cursor: pointer;
    float: right;
    padding: 0 10px;
 }
 .search-wrap {
    position: relative;
-   text-align: right;
+   text-align: center;
    width: 100%;
 }
 
@@ -638,12 +638,13 @@ body {
 .search-form-top {
    border: 0px solid #eaeaea;
    width: 70%;
+   height: 100%;
    display: none;
-   margin-right: 60px;
+   padding-right: 3%;
    padding: 10px;
    position: absolute;
    right: 0;
-   top: 10px;
+   padding-top: 25px;
    z-index: 9999;
    background-color: #066D8B;
 }
@@ -1552,13 +1553,13 @@ a.slide-next:hover {
 }
 .footer-widgets-area {
 	padding-top: 30px;
-	color: rgba(255,255,255,0.8);
+	color: rgba(255,255,255,0.9);
 }
 .footer-widgets-area .tg-one-fourth .widget-title {
 	text-align: left;
 }
 .footer-widgets-area h3.widget-title {
-	color: rgba(255,255,255,0.8);
+	color: rgb(255,255,255);
 }
 .footer-widgets-area .tg-one-fourth p {
 	text-align: left;
@@ -1590,6 +1591,7 @@ a.slide-next:hover {
 .footer-socket-wrapper {
 	padding: 20px 0px 50px;
 	background-color: #066D8B;
+	font-family: 'BrandonText-Light';
 }
 .footer-socket-area {
 	width: 100%;
@@ -1742,6 +1744,7 @@ a#scroll-up:hover {
 }
 .post .entry-content {
 	margin-bottom: 10px;
+	line-height: 27px;
 }
 .entry-content ul {
 	list-style: square;
@@ -2099,7 +2102,7 @@ a#scroll-up:hover {
 
 .sel-element {
 	display: inline-block;
-	width: 20%;
+	width: 30%;
 	margin: 15px;
 	text-align: center;
 	vertical-align: top;
@@ -2112,8 +2115,38 @@ a#scroll-up:hover {
 
 .sel-box {
 	position: relative;
-	width: 70%;
+	width: 90%;
 	display: inline-block;
+}
+
+.sel-box-small {
+	position: relative;
+	width: 60%;
+	display: inline-block;
+}
+
+.ninos-type {
+	text-align: center;
+	position: relative;
+	height: 100%;
+	display: block;
+	width: 100%;
+	overflow: auto;
+}
+
+.ninos-type .home-title {
+	margin: 96px 0px 0px 0px;
+	padding: 35px 0px 0px 0px;
+}
+
+.ninos-type .extract {
+	color: #066D8B;
+	margin: 10px 0px 35px 0px;
+	padding: 0;
+}
+
+#sacramentos-selector .sel-box {
+	width: 60%;
 }
 
 .sel-img {
@@ -2132,7 +2165,7 @@ a#scroll-up:hover {
 .sel-icon-img {
 	background-color: rgba(6,109,139,0.4);
 	position: relative;
-	border-radius: 50%;
+	padding: 35%;
 	opacity: 0;
 	transition: opacity 0.5s;
 	 -webkit-transition: opacity 0.5s;
@@ -2186,6 +2219,13 @@ a#scroll-up:hover {
 	background-color: #066D8B;
 }
 
+.white-line {
+	display: inline-block;
+	width: 60px;
+	height: 1px;
+	background-color: rgba(255,255,255,0.8);
+}
+
 .border-left {
 	border-style: solid;
     border-width: 1px 1px 1px 1px;
@@ -2204,16 +2244,16 @@ a#scroll-up:hover {
 #religious-time {
     display: block;
     position: absolute;
-    top: -60px;
-    right: -57px;
+    top: -74px;
+    right: -70px;
     background-color: white;
     font-size: 0.8em;
     text-align: center;
     text-transform: capitalize;
-    padding: 93px 15px 2px 15px;
+    padding: 115px 15px 2px 15px;
     border: 0px solid;
-    width: 113px;
-    height: 113px;
+    width: 140px;
+    height: 140px;
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -2222,7 +2262,7 @@ a#scroll-up:hover {
     -webkit-box-shadow: inset 0 -1px 6px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0 -1px 6px rgba(0,0,0,0.5);
     box-shadow: inset 0 -1px 6px rgba(0,0,0,0.5);
-    z-index: 10;
+    z-index: 9999;
     -webkit-transition: all 150ms ease;
     -moz-transition: all 150ms ease;
     -ms-transition: all 150ms ease;
@@ -2342,7 +2382,7 @@ a#scroll-up:hover {
 	text-align: center;
 	margin-bottom: 15px;
 	text-transform: uppercase;
-	line-height: 1;
+	line-height: 30px;
 	letter-spacing: .065em;
 }
 
@@ -2359,7 +2399,7 @@ a#scroll-up:hover {
 	text-align: center;
 	margin-bottom: 15px;
 	text-transform: capitalize;
-	line-height: 1;
+	line-height: 1.5;
 }
 
 .home-second {
@@ -2389,6 +2429,7 @@ a#scroll-up:hover {
 .home-evangeli {
 	padding: 35px;
 	margin-bottom: 35px;
+	margin-top: 75px;
 }
 
 .home-middle {
@@ -2405,7 +2446,6 @@ a#scroll-up:hover {
 }
 
 .rrss-box {
-	height: 1000px;
 	overflow: hidden;
 	margin-bottom: 20px;
 }
@@ -2470,8 +2510,13 @@ a#scroll-up:hover {
 
 #act-selector .sel-element {
 	width: 25% !important;
-	padding: 25px 55px 25px 55px;
+	/*padding: 25px 55px 25px 55px;*/
 	margin: 0;
+}
+
+.ninos-clas .sel-element h5 {
+	margin: 0;
+	padding: 0;
 }
 
 .act-title {
@@ -2600,6 +2645,10 @@ a#scroll-up:hover {
 	animation: animatedBackground 40s linear infinite;
 	background-size: cover;
 	opacity: 0.2;
+}
+
+.sub-menu {
+	border-radius: 4px;
 }
 
 @keyframes animatedBackground {
@@ -2906,7 +2955,8 @@ a#scroll-up:hover {
 		width: 100%;
 	}
 	#header-right-section {
-		margin-right: 50px;
+		/*margin-right: 50px;*/
+		margin: 0px !important;
 	}
 }
 @media screen and (max-width: 1078px) {
@@ -2967,16 +3017,27 @@ a#scroll-up:hover {
 	.sel-element h5 {
 		height: 60px;
 	}
+	.ninos-clas .sel-element h5 {
+		height: auto;
+	}
 	#easy_facebook_page_plugin-4 {
 		display: none;
 	}
 }
-@media screen and (max-width: 1017px) {
+@media screen and (max-width: 1026px) {
 	#primary, #secondary {
 		float: none;
 		width: 100%;
 		margin: 0;
 	}
+	.ninos-type .home-title {
+		margin: 192px 0px 0px 0px;
+	}
+
+	#scroll-up {
+		margin-bottom: 45px;
+	}
+
 	#featured-slider .entry-container { max-width: 70%; }
 	#featured-slider .entry-description-container { padding: 5px 10px; padding: 0.5rem 1rem; }
 	#featured-slider .slider-title-head { margin-bottom: 0; }
@@ -3001,8 +3062,9 @@ a#scroll-up:hover {
 		float: none !important;
 	}
 	.search-form-top {
-		top: 70px;
+		top: 90px;
 		width: 100%;
+		height: auto;
 		margin-right: 0;
 		text-align: center;
 	}
@@ -3021,7 +3083,7 @@ a#scroll-up:hover {
 	}
 
 	div.modern div.dpSocialTimeline .dpSocialTimeline_item {
-   		width: 100% !important;
+   		width: 99% !important;
    	}
 
    	#act-selector .sel-element {
@@ -3041,6 +3103,9 @@ a#scroll-up:hover {
 	.mb-redes-section,
 	.mb-suscribete-section {
 		display: inline-block;
+	}
+	.home-evangeli {
+		margin-top: 0;
 	}
 }
 
@@ -3077,7 +3142,6 @@ a#scroll-up:hover {
 	#header-logo-image {
 		position: relative;
 		float: none;
-		max-width: none;
 	}
 
 	.mobile-navigation .col-xs-4 {
@@ -3268,6 +3332,8 @@ a#scroll-up:hover {
 
 	.search-form-top {
 		width: 100%;
+		height: 100%;
+		padding-top: 45px;
 	}
 
 	.fa.search-top {
@@ -3307,9 +3373,21 @@ a#scroll-up:hover {
 	.mb-horarios-section,
 	.mb-calendario-section,
 	.mb-evangelio-section,
-	.mb-redes-section,
 	.mb-suscribete-section {
 		display: none;
+		border-style: solid;
+	    border-width: 1px 1px 1px 1px;
+	    border-radius: 0px;
+	    border-color: rgba(204,212,214,0.5);
+	    background-color: rgba(224,232,234,0.3);
+	    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+		margin-bottom: 0;
+	}
+
+
+	.mb-redes-section {
+		display: block;
+		opacity: 1;
 		border-style: solid;
 	    border-width: 1px 1px 1px 1px;
 	    border-radius: 0px;

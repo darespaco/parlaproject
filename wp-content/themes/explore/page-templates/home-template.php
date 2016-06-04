@@ -108,6 +108,7 @@
             <hr class="line">
             <br>
 
+            <!--
             <div class="visible-phone mb-rrss-box">
                <div class="col-xs-4">
                   <div class="mb-pope-icon">
@@ -144,8 +145,9 @@
                   <?php echo do_shortcode('[dpSocialTimeline id=3]'); ?>
                </div>
             </div>
+            -->
 
-            <div class="hidden-phone rrss-box">
+            <div class="rrss-box">
 
                <div class="col-md-4">
                   <a href="https://twitter.com/pontifex_es" target="_blank">
@@ -175,9 +177,10 @@
                </div>
 
             </div>
+            <!--
             <hr>
             <div class="btn btn-default moreRS">Mostrar más</div>
-
+            -->
          </div>
 
 
@@ -248,7 +251,15 @@
                   </h3>
                   <p class="home-heading">¡Y no te pierdas nada!</p>
                </div>
-              <?php es_subbox( $namefield = "NO", $desc = "", $group = "" ); ?>
+
+                  <div class="newsletter newsletter-subscription">
+                  <form method="post" action="#" onsubmit="return newsletter_check(this)">
+
+                     <input class="newsletter-email" type="email" name="ne" size="30" required>
+                     <input class="newsletter-submit" type="submit" value="Suscríbeme"/>
+                  
+                  </form>
+                  </div>
             </div>
 
          </div>

@@ -564,12 +564,15 @@ div.modern div.dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineText 
 
 div.modern div.dpSocialTimeline .dpSocialTimeline_item {
 	background: white 0px 20px no-repeat;
+	border-radius: 4px;
 	border: 0;
-	-webkit-box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.35);
-	-moz-box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.35);
-	box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.35);
+	-webkit-box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.35);
+	-moz-box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.35);
+	box-shadow: 0px 1px 5px 0 rgba(0, 0, 0, 0.35);
 	color: #666;
 	padding: 0;
+	margin-left: 3px !important;
+	width: 98% !important;
 }
 
 div.modern div.dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineContentHead {
@@ -861,3 +864,29 @@ div.dark .dpSocialTimeline .dpSocialTimeline_item div.dpSocialTimelineContent .d
           transition-duration: 0s;
 }
 
+@media screen and (max-width: 991px) {
+	div.modern div.dpSocialTimeline .dpSocialTimeline_item {
+		width: 30% !important;
+	    position: relative !important;
+	    display: inline-block !important;
+	    top: 0 !important;
+	    vertical-align: top;
+	}
+
+	div.dpSocialTimeline {
+		height: auto !important;
+		margin-bottom: 40px !important;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	div.modern div.dpSocialTimeline .dpSocialTimeline_item {
+		width: 45% !important;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	div.modern div.dpSocialTimeline .dpSocialTimeline_item {
+		width: 98% !important;
+	}
+}
