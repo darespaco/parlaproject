@@ -252,7 +252,7 @@
                   <p class="home-heading">¡Y no te pierdas nada!</p>
                </div>
 
-               <?php echo do_shortcode("[jetpack_subscription_form]"); ?>
+               <?php echo do_shortcode("[email-subscribers namefield='NO' desc='' group='Public']"); ?>
             </div>
 
          </div>
