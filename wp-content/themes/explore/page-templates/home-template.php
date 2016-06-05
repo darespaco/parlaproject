@@ -252,14 +252,7 @@
                   <p class="home-heading">¡Y no te pierdas nada!</p>
                </div>
 
-                  <div class="newsletter newsletter-subscription">
-                  <form method="post" action="#" onsubmit="return newsletter_check(this)">
-
-                     <input class="newsletter-email" type="email" name="ne" size="30" required>
-                     <input class="newsletter-submit" type="submit" value="Suscríbeme"/>
-                  
-                  </form>
-                  </div>
+               <?php echo do_shortcode("[jetpack_subscription_form]"); ?>
             </div>
 
          </div>
