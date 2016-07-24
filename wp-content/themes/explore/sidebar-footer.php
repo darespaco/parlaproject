@@ -48,7 +48,7 @@ if( !is_active_sidebar( 'explore_footer_sidebar_one' ) &&
 							<img src=<?php echo get_template_directory_uri() . '/img/footer-twitter.png'?> title="Twitter"class="footer-social-icon" alt="Síguenos en Twitter">
 						</a>
 
-						<a href="mailto:parroquia@parla.es">
+						<a href="mailto:parroquiaasuncionparla@gmail.com">
 							<img src=<?php echo get_template_directory_uri() . '/img/footer-email.png'?> title="Email" class="footer-social-icon" alt="Mándanos un email">
 						</a>
 					</div>
